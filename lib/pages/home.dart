@@ -30,7 +30,11 @@ class _TenState extends State<Ten> {
             ExpansionTile(  //Молекулрная физика
               title: Text('Молекулярная физика'),
               children: [
-                ElevatedButton(onPressed: () {}, child: Text('Основы молекулярно-кинетической теории')),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/molecular_physics');
+                      },
+                    child: Text('Основы молекулярно-кинетической теории')),
                 ElevatedButton(onPressed: () {}, child: Text('Основы термодинамики')),
               ],
             ),
@@ -90,28 +94,6 @@ class _ElevenState extends State<Eleven> {
 }
 
 
-class MainChose extends StatefulWidget {
-  const MainChose({Key? key}) : super(key: key);
-
-  @override
-  State<MainChose> createState() => _MainChoseState();
-}
-
-class _MainChoseState extends State<MainChose> {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children:  [
-        Ten(),
-        Eleven(),
-      ],
-    );
-  }
-}
-
-
-
-
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -124,7 +106,12 @@ class Home extends StatelessWidget {
       body: Center(
         child: ListView(
           children: [
-            MainChose(),
+            Column(
+            children:  [
+              Ten(),
+              Eleven(),
+        ],
+      ),
           ],
         )
         ),

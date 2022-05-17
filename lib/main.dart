@@ -1,3 +1,4 @@
+import 'package:course/pages/molecular_physics.dart';
 import 'package:flutter/material.dart';
 
 import 'package:course/pages/formuls_main.dart';
@@ -12,6 +13,7 @@ void main() => runApp(MaterialApp(
   routes: {
     '/': (context) => Home(),
     '/formuls_10': (context) => Formuls(),
+    '/molecular_physics': (context) => Molecular(),
   },
 ));
 
