@@ -31,11 +31,10 @@ class _TenState extends State<Ten> {
               title: Text('Молекулярная физика'),
               children: [
                 ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/molecular_physics');
-                      },
+                    onPressed: () {Navigator.pushNamed(context, '/molecular_physics');},
                     child: Text('Основы молекулярно-кинетической теории')),
-                ElevatedButton(onPressed: () {}, child: Text('Основы термодинамики')),
+
+                ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/thermodynamics');}, child: Text('Основы термодинамики')),
               ],
             ),
 

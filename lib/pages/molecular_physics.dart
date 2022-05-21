@@ -508,7 +508,7 @@ class _FifenState extends State<Fifen> {
             },
           ),
 
-         const Text('При постоянных массе и молярной массе отношение произведения давления идеального газа и его объёма к абсолютной температуре является величиной постоянной.'),
+         const Text('При постоянных массе и молярной массе отношение произведения давления идеального газа и его объёма к абсолютной температуре является величиной постоянной.\n'),
 
 
          const Text('Уравнение состояния можно применять для газов при следующих условиях:\n'
@@ -587,6 +587,282 @@ class _FifenState extends State<Fifen> {
   }
 }
 
+class Sixth extends StatefulWidget {
+  const Sixth({Key? key}) : super(key: key);
+
+  @override
+  State<Sixth> createState() => _SixthState();
+}
+
+class _SixthState extends State<Sixth> {
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
+      children: const [
+
+        Text('Изотермический, изобарный и изохорный процессы\n', textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
+
+        Text('Если при постоянных массе и молярной массе ещё'
+        'один из макропараметров (p, V, T), входящих в уравнение состояния '
+            'идеального газа, не изменяется, то такие процессы называют изопроцессами.\n', textAlign: TextAlign.justify,),
+
+        Text('Изотермический процесс\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        Text('Процесс изменения состояния физической системы при постоянной температуре (T const) называют изотермическим.\n', textAlign: TextAlign.justify,),
+        Image(image: AssetImage('images/izoterm.png')),
+
+        Text('Закон Бойля–Мариотта:\n'
+            'Давление данной массы газа при постоянных молярной массе и температуре обратно пропорционально его объёму.\n', textAlign: TextAlign.justify,),
+
+        Text('График изотермического процесса, совершаемого идеальным газом, в координатах (p, V) представляет собой гиперболу:\n', textAlign: TextAlign.justify,),
+        Image(image: AssetImage('images/graf_izoterm.png')),
+
+        Text('В физике такую кривую называют изотермой.\n', textAlign: TextAlign.justify,),
+
+        Text('Изобарный процесс\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        Text('Процесс изменения состояния газа при постоянном'
+        'давлении (p const) называют изобарным\n', textAlign: TextAlign.justify,),
+
+        Image(image: AssetImage('images/Gei_Les.png')),
+
+        Text('\nЗакон Гей-Люссака:\n'),
+
+        Text('Объём данной массы газа при постоянных молярной массе и давлении прямо пропорционален абсолютной температуре.\n', textAlign: TextAlign.justify,),
+
+        Image(image: AssetImage('images/graf_izobar.png')),
+
+        Text('Эту линию называют изобарой. (Изобара реальных газов не может быть продлена'
+                  'до нулевого значения температуры (на графике пунктирная линия), потому что при низких температурах все'
+                  'газы существенно отличаются от модели «идеальный'
+                  'газ» и при дальнейшем уменьшении температуры превращаются в жидкости.)\n', textAlign: TextAlign.justify,),
+
+        Text('Изохорный процесс\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        Text('Процесс изменения состояния газа при постоянном объёме (V const) называют изохорным.\n', textAlign: TextAlign.justify,),
+
+        Image(image: AssetImage('images/izohor.png')),
+
+        Text('Закон Шарля:\n Давление данной массы газа при постоянных молярной массе и объёме прямо пропорционально абсолютной температуре.\n', textAlign: TextAlign.justify,),
+
+        Image(image: AssetImage('images/graf_izohor.png')),
+
+        Text('Эту линию называют изохорой.'),
+
+      ],
+    );
+  }
+}
+
+
+class Seventh extends StatefulWidget {
+  const Seventh({Key? key}) : super(key: key);
+
+  @override
+  State<Seventh> createState() => _SeventhState();
+}
+
+class _SeventhState extends State<Seventh> {
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
+      children: const [
+
+        Text('Строение и свойства твёрдых тел\n', textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
+
+        Text('Кристаллы\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        Text('Кристаллы — твёрдые тела, атомы, ионы или молекулы которых '
+            'совершают тепловые колебания около определённых, упорядоченных в пространстве положений равновесия.\n', textAlign: TextAlign.justify,),
+
+        Text('Узлы кристаллической решётки — положения'
+                  'устойчивого равновесия колеблющихся частиц (ионов, атомов или молекул), образующих кристалл.\n', textAlign: TextAlign.justify,),
+
+        Text('элементарная кристаллическая ячейка — многогранник наименьших '
+            'размеров, последовательным переносом без изменения ориентации '
+            'которого вместе с частицами, находящимися внутри этого многогранника, можно построить весь кристалл.\n', textAlign: TextAlign.justify,),
+
+        Text('Типы кристаллов:\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        Image(image: AssetImage('images/tabl.png')),
+
+        Text('Монокристаллы и поликристаллы\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        Text('\nМонокристаллы — твёрдые тела, имеющие во всём объёме единую кристаллическую решётку.\n', textAlign: TextAlign.justify,),
+
+        Text('Поликристаллы — твёрдые тела, состоящие из большого числа сросшихся'
+    'между собой маленьких кристаллов.\n', textAlign: TextAlign.justify,),
+
+        Text('В отличие от монокристаллов поликристаллы изотропны, т. е. их свойства'
+    'одинаковы по всем направлениям.\n', textAlign: TextAlign.justify,),
+
+        Text('Аморфные тела\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        Text('Аморфное состояние — твёрдое некристаллическое состояние вещества, '
+    'характеризующееся изотропией свойств и отсутствием определённой температуры плавления.\n', textAlign: TextAlign.justify,)
+
+      ],
+    );
+  }
+}
+
+
+
+class Eighth extends StatelessWidget {
+  const Eighth({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+        padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
+
+        children: const [
+        Text('Строение и свойства жидкостей\n', textAlign: TextAlign.center,
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
+
+        Text('В жидкостях упорядоченность в расположении молекул'
+        'сохраняется лишь среди ближайших соседей (на расстояниях, равных нескольким диаметрам молекул).\n', textAlign: TextAlign.justify,),
+
+        Text('Средняя кинетическая энергия таких колебаний молекул определяет температуру жидкости\n', textAlign: TextAlign.justify,),
+
+        Text('Свойства жидкостей определяются расстояниями между молекулами, '
+            'соизмеримыми с их собственными размерами, и возможностью относительно '
+            'свободного перемещения молекул.\n', textAlign: TextAlign.justify,),
+
+        Text('Свойства жидкостей (малая сжимаемость и текучесть) определяются:\n'
+            '\t\t\t\t1) Расстояниями между молекулами, соизмеримыми с их собственными размерали.\n'
+            '\t\t\t\t2) Возможностью относительно свободного перемещения молекул\n', textAlign: TextAlign.justify,),
+    ]
+    );
+  }
+}
+
+class Ninth extends StatelessWidget {
+  const Ninth({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
+
+      children: const [
+        Text('Испарение и конденсация. Насыщенный пар\n', textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
+
+
+        Text('Испарение и конденсация\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        Text('Процесс испарения и конденсации:\n', textAlign: TextAlign.justify,),
+        Image(image: AssetImage('images/proc_is_kon.png')),
+
+        Text('Испареение — процесс перехода вещества из жидкого состояния '
+            'в парообразное или газообразное, происходящий на поверхности вещества.\n', textAlign: TextAlign.justify,),
+
+        Text('Скорость испарения зависит от рода жидкости, её температуры, '
+    'площади свободной поверхности и от притока воздуха.\n', textAlign: TextAlign.justify,),
+
+        Text('Конденсация — переход водяного пара в жидкость\n', textAlign: TextAlign.justify ,),
+
+        Text('Насыщенный пар\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        Text('Пар, находящийся в состоянии динамического равновесия с жидкостью, называют насыщенным паром.\n', textAlign: TextAlign.justify,),
+
+        Text('Давление такого пара называют давлением насыщенного пара\n', textAlign: TextAlign.justify,),
+
+        Text('Давление насыщенного пара не зависит от его объёма при постоянной температуре.\n', textAlign: TextAlign.justify,),
+
+        Text('при увеличении температуры давление'
+    'насыщенного пара возрастает значительно быстрее, чем давление идеального газа.\n', textAlign: TextAlign.justify,),
+
+        Text('Чем меньше силы взаимодействия между молекулами жидкости, тем '
+            'больше концентрация молекул насыщенного пара, а значит, тем больше его давление и плотность.\n', textAlign: TextAlign.justify,),
+
+        Text('При изменении объёма насыщенного пара его масса также изменяется.\n', textAlign: TextAlign.justify,),
+
+        Text('Давление (плотность) насыщенного пара при данной температуре — '
+            'максимальное давление (плотность), которое может иметь пар, '
+            'находящийся в состоянии динамического равновесия с жидкостью при этой температуре.\n', textAlign: TextAlign.justify,),
+
+        Text('Ненасыщенный пар\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        Text('Ненасыщенный пар — пар, давление (плотность) которого меньше давления (плотности) насыщенного пара при той же'
+        'температуре.\n', textAlign: TextAlign.justify,)
+      ],
+
+    );
+  }
+}
+
+
+class Tenth extends StatefulWidget {
+  const Tenth({Key? key}) : super(key: key);
+
+  @override
+  State<Tenth> createState() => _TenthState();
+}
+
+class _TenthState extends State<Tenth> {
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
+
+      children: [
+
+        Text('Влажность воздуха\n', textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
+
+        Text('Абсолютная влажность Uп воздуха — физическая величина, равная '
+            'плотности водяного пара, находящегося в воздухе при данных условиях.\n', textAlign: TextAlign.justify,),
+
+
+
+        Text('Относительная влажность φ воздуха — физическая величина, равная '
+    'отношению абсолютной влажности Uп к плотности Uн насыщенного водяного пара'
+    'при данной температуре\n', textAlign: TextAlign.justify,),
+
+
+        Text('Относительная влажность:'),
+        TextButton(
+          child: const Image(image: AssetImage('images/FI.png')),
+
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                //padding: EdgeInsets.only(top: 7.0),
+                content: const Text(
+                    'φ — относительная влажность\n'
+                      'ρп — абсолютная влажность\n'
+                      'ρн — плотность насыщеного водяного пара\n', textAlign: TextAlign.center,),
+
+                padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+
+              ),
+            );
+          },
+        ),
+
+        Text('Если же плотность водяного пара превышает плотность насыщенного'
+    'пара, то пар в воздухе считают пересыщенным.\n', textAlign: TextAlign.justify,),
+
+        Text('Температуру, при которой водяной пар в результате изобарного охлаждения'
+        'становится насыщенным, называют точкой росы.\n', textAlign: TextAlign.justify,),
+
+        Text('Относительную влажность воздуха обычно измеряют психрометром, '
+            'состоящим из двух термометров — сухого и влажного.\n', textAlign: TextAlign.justify,),
+      ],
+    );
+  }
+}
+
 
 
 
@@ -616,6 +892,16 @@ class _MolecularState extends State<Molecular> {
           Fourth(),
 
           Fifen(),
+
+          Sixth(),
+
+          Seventh(),
+
+          Eighth(),
+
+          Ninth(),
+
+          Tenth(),
 
 
 
