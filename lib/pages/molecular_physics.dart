@@ -51,12 +51,12 @@ class _FirstState extends State<First> {
     'веществ между частицами другого вещества вследствие их теплового движения.\n', textAlign: TextAlign.justify,),
 
         Text('Концентрация частиц — физическая величина, численно равная числу частиц, содержащихся в единичном объёме:\n', textAlign: TextAlign.justify,),
-        Image(image: AssetImage('images/n.png'),),
+        Image(image: AssetImage('images/molecular/n.png'),),
 
         Text('Если в разных частях одного и того же тела концентрации частиц не совпадают, то вследствие их теплового движения при постоянной температуре и отсутствии внешних'
     'сил происходит упорядоченное перемещение. Оно приводит'
     'к выравниванию концентраций\n', textAlign: TextAlign.justify,),
-        Image(image: AssetImage('images/im11.png')),
+        Image(image: AssetImage('images/molecular/im11.png')),
 
         Text('\nСкорость диффузии зависит от характера движения частиц вещества, который определяется температурой и особенно агрегатным состоянием. В газах диффузия происходит быстрее, чем в жидкостях, а тем более в твёрдых телах.\n', textAlign: TextAlign.justify,),
 
@@ -89,7 +89,7 @@ class _SecondState extends State<Second> {
     'атомной массой Ar).\n', textAlign: TextAlign.justify,),
 
         TextButton(
-          child: Image(image: AssetImage('images/mol.png')),
+          child: Image(image: AssetImage('images/molecular/mol.png')),
           
           onPressed: () {
           ScaffoldMessenger.of(context).showSnackBar(
@@ -112,11 +112,11 @@ class _SecondState extends State<Second> {
         Text('Основной единицей количества вещества в СИ является 1 моль (моль).\n'),
 
         Text('Значение постоянной Авогадро:\n'),
-        Image(image: AssetImage('images/const_av.png')), Text(''),
+        Image(image: AssetImage('images/molecular/const_av.png')), Text(''),
 
         Text('Молярная масса M — масса вещества, взятого в количестве v = 1 моль.\n'),
         TextButton(
-          child: Image(image: AssetImage('images/molar_mass.png')),
+          child: Image(image: AssetImage('images/molecular/molar_mass.png')),
 
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
@@ -137,7 +137,7 @@ class _SecondState extends State<Second> {
         ),
 
         TextButton(
-          child: Image(image: AssetImage('images/molar_mass2.png')),
+          child: Image(image: AssetImage('images/molecular/molar_mass2.png')),
 
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
@@ -159,7 +159,7 @@ class _SecondState extends State<Second> {
 
         Text('Число молекул в веществе:'),
         TextButton(
-          child: Image(image: AssetImage('images/count_moleculars.png')),
+          child: Image(image: AssetImage('images/molecular/count_moleculars.png')),
 
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
@@ -224,7 +224,7 @@ class _ThirtState extends State<Thirt> {
 
         const Text('Основное уравнение молекулярно-кинетической теории идеального газа:'),
         TextButton(
-          child: Image(image: AssetImage('images/p_in_gaz.png')),
+          child: Image(image: AssetImage('images/molecular/p_in_gaz.png')),
 
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
@@ -253,7 +253,7 @@ class _ThirtState extends State<Thirt> {
 
         const Text('Средняя кинетическая энергия поступательного движения молекул:'),
         TextButton(
-          child: Image(image: AssetImage('images/middle_E.png')),
+          child: Image(image: AssetImage('images/molecular/middle_E.png')),
 
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
@@ -277,7 +277,7 @@ class _ThirtState extends State<Thirt> {
 
         const Text('Основное уравнение молекулярно-кинетической теории:'),
         TextButton(
-          child: Image(image: AssetImage('images/p.png')),
+          child: Image(image: AssetImage('images/molecular/p.png')),
 
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
@@ -298,10 +298,6 @@ class _ThirtState extends State<Thirt> {
             );
           },
         ),
-
-
-
-
       ]
     );
   }
@@ -353,11 +349,11 @@ class _FourthState extends State<Fourth> {
               'энергия теплового движения частиц вещества.\n', textAlign: TextAlign.justify,),
 
           const Text('Постоянная Больцмана:'),
-          const Image(image: AssetImage('images/p.png')),
+          const Image(image: AssetImage('images/molecular/p.png')),
 
           const Text('\nЧисловое значение температуры при использовании абсолютной температурной шкалы:'),
           TextButton(
-            child: Image(image: AssetImage('images/z1.png')),
+            child: Image(image: AssetImage('images/molecular/z1.png')),
 
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(
@@ -382,7 +378,7 @@ class _FourthState extends State<Fourth> {
 
           const Text('Средняя кинетическая энергия:'),
           TextButton(
-            child: Image(image: AssetImage('images/Ek.png')),
+            child: Image(image: AssetImage('images/molecular/Ek.png')),
 
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(
@@ -405,7 +401,7 @@ class _FourthState extends State<Fourth> {
 
           const Text('Средняя квадратичная скорость теплового движения частиц газа:'),
           TextButton(
-            child: Image(image: AssetImage('images/Vk.png')),
+            child: Image(image: AssetImage('images/molecular/Vk.png')),
 
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(
@@ -429,7 +425,7 @@ class _FourthState extends State<Fourth> {
 
           const Text('основное уравнение молекулярно-кинетической теории идеального газа может быть записано в виде:'),
           TextButton(
-            child: Image(image: AssetImage('images/p_nkT.png')),
+            child: Image(image: AssetImage('images/molecular/p_nkT.png')),
 
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(
@@ -486,7 +482,7 @@ class _FifenState extends State<Fifen> {
 
           const Text('Если при переходе идеального газа из одного состояния в другое число его молекул остаётся постоянным, т. е. масса и молярная масса газа не изменяются, то следует:\n', textAlign: TextAlign.justify,),
           TextButton(
-            child: const Image(image: AssetImage('images/eq_gaz.png')),
+            child: const Image(image: AssetImage('images/molecular/eq_gaz.png')),
 
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(
@@ -517,7 +513,7 @@ class _FifenState extends State<Fifen> {
                     '\t\t\t\t2) не слишком низкие или же высокие температуры (пока абсолютное значение потенциальной энергии межмолекулярного взаимодействия пренебрежимо мало по сравнению с кинетической энергией теплового движения молекул).\n', textAlign: TextAlign.justify,),
 
          const Text('Универсальная газовая постоянная R — величина, равна произведению постоянной Больцмана k и постоянной Авогадро'),
-          const Image(image: AssetImage('images/R.png')),
+          const Image(image: AssetImage('images/molecular/R.png')),
 
           const Text('Уравнение Клайперона-Менделеева:\n'),
 
@@ -525,7 +521,7 @@ class _FifenState extends State<Fifen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               TextButton(
-                child: const Image(image: AssetImage('images/KM_!.png')),
+                child: const Image(image: AssetImage('images/molecular/KM_!.png')),
 
                 onPressed: () {
                   ScaffoldMessenger.of(context).showSnackBar(
@@ -551,7 +547,7 @@ class _FifenState extends State<Fifen> {
               ),
 
               TextButton(
-                child: const Image(image: AssetImage('images/KM_2.png')),
+                child: const Image(image: AssetImage('images/molecular/KM_2.png')),
 
                 onPressed: () {
                   ScaffoldMessenger.of(context).showSnackBar(
@@ -611,13 +607,13 @@ class _SixthState extends State<Sixth> {
         Text('Изотермический процесс\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
 
         Text('Процесс изменения состояния физической системы при постоянной температуре (T const) называют изотермическим.\n', textAlign: TextAlign.justify,),
-        Image(image: AssetImage('images/izoterm.png')),
+        Image(image: AssetImage('images/molecular/izoterm.png')),
 
         Text('Закон Бойля–Мариотта:\n'
             'Давление данной массы газа при постоянных молярной массе и температуре обратно пропорционально его объёму.\n', textAlign: TextAlign.justify,),
 
         Text('График изотермического процесса, совершаемого идеальным газом, в координатах (p, V) представляет собой гиперболу:\n', textAlign: TextAlign.justify,),
-        Image(image: AssetImage('images/graf_izoterm.png')),
+        Image(image: AssetImage('images/molecular/graf_izoterm.png')),
 
         Text('В физике такую кривую называют изотермой.\n', textAlign: TextAlign.justify,),
 
@@ -626,13 +622,13 @@ class _SixthState extends State<Sixth> {
         Text('Процесс изменения состояния газа при постоянном'
         'давлении (p const) называют изобарным\n', textAlign: TextAlign.justify,),
 
-        Image(image: AssetImage('images/Gei_Les.png')),
+        Image(image: AssetImage('images/molecular/Gei_Les.png')),
 
         Text('\nЗакон Гей-Люссака:\n'),
 
         Text('Объём данной массы газа при постоянных молярной массе и давлении прямо пропорционален абсолютной температуре.\n', textAlign: TextAlign.justify,),
 
-        Image(image: AssetImage('images/graf_izobar.png')),
+        Image(image: AssetImage('images/molecular/graf_izobar.png')),
 
         Text('Эту линию называют изобарой. (Изобара реальных газов не может быть продлена'
                   'до нулевого значения температуры (на графике пунктирная линия), потому что при низких температурах все'
@@ -643,11 +639,11 @@ class _SixthState extends State<Sixth> {
 
         Text('Процесс изменения состояния газа при постоянном объёме (V const) называют изохорным.\n', textAlign: TextAlign.justify,),
 
-        Image(image: AssetImage('images/izohor.png')),
+        Image(image: AssetImage('images/molecular/izohor.png')),
 
         Text('Закон Шарля:\n Давление данной массы газа при постоянных молярной массе и объёме прямо пропорционально абсолютной температуре.\n', textAlign: TextAlign.justify,),
 
-        Image(image: AssetImage('images/graf_izohor.png')),
+        Image(image: AssetImage('images/molecular/graf_izohor.png')),
 
         Text('Эту линию называют изохорой.'),
 
@@ -688,7 +684,7 @@ class _SeventhState extends State<Seventh> {
 
         Text('Типы кристаллов:\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
 
-        Image(image: AssetImage('images/tabl.png')),
+        Image(image: AssetImage('images/molecular/tabl.png')),
 
         Text('Монокристаллы и поликристаллы\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
 
@@ -757,7 +753,7 @@ class Ninth extends StatelessWidget {
         Text('Испарение и конденсация\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
 
         Text('Процесс испарения и конденсации:\n', textAlign: TextAlign.justify,),
-        Image(image: AssetImage('images/proc_is_kon.png')),
+        Image(image: AssetImage('images/molecular/proc_is_kon.png')),
 
         Text('Испареение — процесс перехода вещества из жидкого состояния '
             'в парообразное или газообразное, происходящий на поверхности вещества.\n', textAlign: TextAlign.justify,),
@@ -828,7 +824,7 @@ class _TenthState extends State<Tenth> {
 
         Text('Относительная влажность:'),
         TextButton(
-          child: const Image(image: AssetImage('images/FI.png')),
+          child: const Image(image: AssetImage('images/molecular/FI.png')),
 
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
