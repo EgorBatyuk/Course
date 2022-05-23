@@ -35,6 +35,8 @@ class _TenState extends State<Ten> {
                     child: Text('Основы молекулярно-кинетической теории')),
 
                 ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/thermodynamics');}, child: Text('Основы термодинамики')),
+
+                ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/test');}, child: Text('Тест')),
               ],
             ),
 
