@@ -1,4 +1,3 @@
-import 'package:course/pages/formuls_main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -34,16 +33,18 @@ class _TenState extends State<Ten> {
                     onPressed: () {Navigator.pushNamed(context, '/molecular_physics');},
                     child: Text('Основы молекулярно-кинетической теории')),
 
+                ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/test');}, child: Text('Тест')),
+
                 ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/thermodynamics');}, child: Text('Основы термодинамики')),
 
-                ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/test');}, child: Text('Тест')),
+
               ],
             ),
 
             ExpansionTile(  //Электродинамика
               title: Text('Электродинамика'),
               children: [
-                ElevatedButton(onPressed: () {}, child: Text('Электростатика')), //Молекулрная физика
+                ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/electrostatics');}, child: Text('Электростатика')), //Молекулрная физика
                 ElevatedButton(onPressed: () {}, child: Text('Постоянный электрический ток')),
                 ElevatedButton(onPressed: () {}, child: Text('Магнитное поле. Электромагнитная индукция')),
                 ElevatedButton(onPressed: () {}, child: Text('Электрический ток в разных средах')),
@@ -94,6 +95,28 @@ class _ElevenState extends State<Eleven> {
   }
 }
 
+class Statistic extends StatefulWidget {
+  const Statistic({Key? key}) : super(key: key);
+
+  @override
+  State<Statistic> createState() => _StatisticState();
+}
+
+class _StatisticState extends State<Statistic> {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [const SizedBox(
+        height: 300.0,
+        width: 500.0,
+        child: Card(child: Text('Hello World!')),
+      ),
+      ],
+    );
+  }
+}
+
+
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -109,6 +132,7 @@ class Home extends StatelessWidget {
           children: [
             Column(
             children:  [
+              Statistic(),
               Ten(),
               Eleven(),
         ],

@@ -88,6 +88,9 @@ class _SecondState extends State<Second> {
     'называют относительной молекулярной массой Mr (или относительной'
     'атомной массой Ar).\n', textAlign: TextAlign.justify,),
 
+        Text('Количество вещества v определяют отношением числа частиц N этого'
+    'вещества к постоянной Авогадро NA\n', textAlign: TextAlign.justify,),
+
         TextButton(
           child: Image(image: AssetImage('images/molecular/mol.png')),
           
@@ -669,6 +672,9 @@ class _SeventhState extends State<Seventh> {
 
         Text('Строение и свойства твёрдых тел\n', textAlign: TextAlign.center,
           style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
+
+        Text('Твёрдое тело — любое тело, сохраняющее'
+        'форму и объём в отсутствие внешних воздействий\n', textAlign: TextAlign.justify,),
 
         Text('Кристаллы\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
 
