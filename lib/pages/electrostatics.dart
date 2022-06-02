@@ -199,17 +199,68 @@ class _FourthState extends State<Fourth> {
     'величина, равная отношению силы, которой поле действует на пробный заряд, к '
     'значению этого заряда:\n', textAlign: TextAlign.justify,),
 
+        Row(
+          children: [
+
+          TextButton(
+            child: const Image(image: AssetImage('images/thermodynamic/E.png')),
+
+            onPressed: () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: const Text(
+                    'E — напряжённость электростатического поля\n'
+                        'F — сила, действующая на пробный заряд\n'
+                        'q0 — значение этого заряда\n', textAlign: TextAlign.center,),
+
+                  padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                  behavior: SnackBarBehavior.floating,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+
+                ),
+              );
+            },
+          ),
+
+          TextButton(
+            child: const Image(image: AssetImage('images/thermodynamic/E2.png')),
+
+            onPressed: () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: const Text(
+                    'E — напряжённость электростатического поля\n'
+                        'Q — точечный заряд\n'
+                        'r — расстояние между зарядом и точкой, в которой определяют '
+                        'значение напряжённости\n', textAlign: TextAlign.center,),
+
+                  padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                  behavior: SnackBarBehavior.floating,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+
+                ),
+              );
+            },
+          ),
+          ],
+        ),
+
+
+        const Text('Сила, действующая на любой точечный заряд в любой точке этого поля:\n', textAlign: TextAlign.justify,),
         TextButton(
-          child: const Image(image: AssetImage('images/thermodynamic/F.png')),
+          child: const Image(image: AssetImage('images/thermodynamic/F__.png')),
 
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
                 content: const Text(
-                  'F — сила взамодействия точечных зарядов\n'
-                      'k — коэффициент пропорциональности\n'
-                      '|q1| и |q2| — модули точечных зарядов\n'
-                      'r — расстояние между ними\n', textAlign: TextAlign.center,),
+                      'F — сила, действующая на любой точечный заряд\n'
+                      'E — напряженность электрического поля\n'
+                      'q — точечный заряд\n', textAlign: TextAlign.center,),
 
                 padding: const EdgeInsets.symmetric(horizontal: 15.0,),
                 behavior: SnackBarBehavior.floating,
@@ -222,10 +273,440 @@ class _FourthState extends State<Fourth> {
           },
         ),
 
+        const Text('Принцип суперпозиции электрических полей\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        const Text('Принцип суперпозиции полей — если в данной точке пространства электростатическое поле создано системой '
+    'точечных зарядов, то напряжённость результирующего поля в этой точке равна '
+    'векторной сумме напряжённостей полей, создаваемых каждым из точечных зарядов системы в отдельности:\n', textAlign: TextAlign.justify,),
+
+        const Image(image: AssetImage('images/thermodynamic/E_E_E.png')),
       ],
     );
   }
 }
+
+
+class Fifen extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
+
+      children: const [
+
+        Text('Линии напряжённости электростатического поля\n', textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
+
+        Text('Линии напряжённости — воображаемые направленные линии, касательные '
+            'к которым в каждой точке поля совпадают по направлению с напряжённостью '
+            'электростатического поля в той же точке\n', textAlign: TextAlign.justify,),
+
+        Image(image: AssetImage('images/thermodynamic/lines.png')),
+
+        Text('Однородное электростатическое поле — электростатическое поле, '
+            'напряжённость которого во всех точках пространства одинакова.\n', textAlign: TextAlign.justify,),
+      ],
+    );
+  }
+}
+
+class Sixth extends StatefulWidget {
+  const Sixth({Key? key}) : super(key: key);
+
+  @override
+  State<Sixth> createState() => _SixthState();
+}
+
+class _SixthState extends State<Sixth> {
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+
+      padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
+
+      children: [
+
+        Text('Работа силы однородного электростатического поля. Потенциал\n', textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
+
+        const Text('Работа силы однородного электростатического поля\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        const Text('Физические поля, работа сил которых не зависит от формы '
+            'траектории, называют потенциальными.\n', textAlign: TextAlign.justify,),
+
+        const Text('Потенциал электростатического поля как его энергетическая характеристика\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        const Text('Потенциал электростатического поля в данной точке пространства — '
+            'физическая скалярная величина, равная отношению потенциальной энергии '
+            'пробного заряда, помещённого в данную точку поля, к значению этого заряда:\n', textAlign: TextAlign.justify,),
+
+        TextButton(
+          child: const Image(image: AssetImage('images/thermodynamic/fi.png')),
+
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: const Text(
+                  'φ — потенциал электростатического поля\n'
+                      'Wn —  потенциальной энергии пробного заряда\n'
+                      'q0 — значение заряда\n', textAlign: TextAlign.center,),
+
+                padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+
+              ),
+            );
+          },
+        ),
+
+        const Text('Потенциал M электростатического поля точечного заряда Q на расстоянии '
+            'r от него в вакууме или в воздухе определяют соотношением:\n',textAlign: TextAlign.justify,),
+
+        TextButton(
+          child: const Image(image: AssetImage('images/thermodynamic/fi2.png')),
+
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: const Text(
+                  'φ — потенциал электростатического поля\n'
+                      'Q — точечный заряд\n'
+                      'r — расстояние между зарядом и точкой, в которой определяют '
+                      'значение напряжённости\n', textAlign: TextAlign.center,),
+
+                padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+
+              ),
+            );
+          },
+        ),
+
+        const Text('Если в данной точке пространства электростатическое поле создано '
+            'системой точечных зарядов, то потенциал результирующего поля в этой '
+            'точке равен алгебраической сумме потенциалов полей в этой же точке '
+            'пространства, создаваемых каждым из точечных зарядов системы в отдельности:\n', textAlign: TextAlign.justify,),
+
+        const Image(image: AssetImage('images/thermodynamic/f_f_f.png')),
+      ],
+    );
+  }
+}
+
+class Seventh extends StatefulWidget {
+  const Seventh({Key? key}) : super(key: key);
+
+  @override
+  State<Seventh> createState() => _SeventhState();
+}
+
+class _SeventhState extends State<Seventh> {
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+
+      padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
+
+      children: [
+
+      const Text('Разность потенциалов электростатического поля. Напряжение. Связь '
+          'между напряжением и напряжённостью однородного электростатического поля\n', textAlign: TextAlign.center,
+      style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
+
+        const Text('Разность потенциалов\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        const Text('Разность потенциалов U12 между двумя точками электростатического '
+            'поля — физическая скалярная величина, равная отношению работы, '
+            'совершаемой силой поля при перемещении пробного заряда из начальной '
+            'точки в конечную, к значению этого заряда:\n', textAlign: TextAlign.justify,),
+
+        TextButton(
+          child: const Image(image: AssetImage('images/thermodynamic/U12.png')),
+
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: const Text(
+                    'U12 — разность потенциалов между 2 точками электростатического поля\n'
+                      'A — работф, совершаемая силой поля при перемещении пробного заряда из начальной точки в конечную\n'
+                      'q0 — значение пробного заряда\n', textAlign: TextAlign.center,),
+
+                padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+
+              ),
+            );
+          },
+        ),
+
+        const Text('Связь между напряжением и напряжённостью однородного электростатического поля\n',
+          style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        const Text('. Термин «напряжение» ввёл в 1792 г. Вольта.\n', textAlign: TextAlign.justify,),
+
+        const Text('Отметим, что для электростатических полей понятия «электрическое '
+            'напряжение» и «разность потенциалов» тождественны\n', textAlign: TextAlign.justify,),
+
+        const Text('Работа, совершаемая силой однородного электростатического поля '
+            'напряжённостью G E при перемещении пробного положительного заряда q0 '
+            'из точки 1 с потенциалом M1 в точку 2 с потенциалом M2< M1, может '
+            'быть определена в соответствии с выражением:\n', textAlign: TextAlign.justify,),
+
+        TextButton(
+          child: const Image(image: AssetImage('images/thermodynamic/A12.png')),
+
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: const Text(
+                  'A12 — работа, совершаемая силой однородного электростатического поля\n'
+                      'q0 — пробный положительной заряд\n'
+                      'φ1 и φ2 — потенциал\n', textAlign: TextAlign.center,),
+
+                padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+
+              ),
+            );
+          },
+        ),
+      ]
+    );
+  }
+}
+
+class Eighth extends StatefulWidget {
+  const Eighth({Key? key}) : super(key: key);
+
+  @override
+  State<Eighth> createState() => _EighthState();
+}
+
+class _EighthState extends State<Eighth> {
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+
+      padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
+
+      children: [
+
+        const Text('Конденсаторы. Электроёмкость конденсатора. Электроёмкость плоского конденсатора\n', textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
+
+        const Text('Конденсаторы\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        const Text('Для накапливания значительных разноимённых зарядов используют '
+            'устройство, называемое конденсатором\n', textAlign: TextAlign.justify,),
+
+        const Text('Простейший конденсатор – система, состоящая из двух проводников, '
+            'разделённых слоем диэлектрика, толщина d которого мала по сравнению '
+            'с размерами проводников.\n', textAlign: TextAlign.justify,),
+
+        const Text('Проводники, образующие конденсатор, называют его обкладками.\n', textAlign: TextAlign.justify,),
+
+        const Text('На обкладках конденсатора накапливаются противоположные по '
+            'знаку электрические заряды, модули которых равны.\n', textAlign: TextAlign.justify,),
+
+        const Text('Процесс накапливания зарядов на обкладках называют зарядкой '
+            'конденсатора, а процесс нейтрализации зарядов при соединении '
+            'обкладок конденсатора проводником — разрядкой конденсатора.\n', textAlign: TextAlign.justify,),
+
+        const Text('Модуль заряда, находящегося на одной из обкладок конденсатора, '
+            'называют зарядом конденсатора.\n', textAlign: TextAlign.justify,),
+
+        const Text('Электроёмкость конденсатора\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        const Text('В процессе зарядки простейшего конденсатора его обкладки '
+            'приобретают противоположные по знаку заряды q и –q, модули которых равны.\n', textAlign: TextAlign.justify,),
+
+        const Text('Эти заряды создают между обкладками электростатическое поле, '
+            'линии напряжённости которого начинаются на положительно заряженной '
+            'обкладке и заканчиваются на отрицательно заряженной.\n', textAlign: TextAlign.justify,),
+
+        const Text('Электрическая ёмкость конденсатора — физическая скалярная '
+            'величина, равная отношению заряда конденсатора к напряжению между '
+            'его обкладками:\n', textAlign: TextAlign.justify,),
+
+        TextButton(
+          child: const Image(image: AssetImage('images/thermodynamic/C.png')),
+
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: const Text(
+                  'C — электрическая ёмкость конденсатора\n'
+                      'q — заряд конденсатора\n'
+                      'U — апряжение между обкладками\n', textAlign: TextAlign.center,),
+
+                padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+
+              ),
+            );
+          },
+        ),
+
+        const Text('Единицей электрической ёмкости в СИ является фарад (Ф).\n', textAlign: TextAlign.justify,),
+
+        const Image(image: AssetImage('images/thermodynamic/1f.png')),
+
+        const Text('Чем меньше напряжение U на обкладках конденсатора при '
+            'сообщении им зарядов q и –q, тем больше электроёмкость конденсатора\n', textAlign: TextAlign.justify,),
+
+        const Text('Электроёмкость плоского конденсатора\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        const Text('Если обкладками конденсатора являются две одинаковые '
+            'параллельные друг другу пластины, то конденсатор называют плоским\n', textAlign: TextAlign.justify,),
+
+        const Text('Электростатическое поле заряженного плоского конденсатора в '
+            'основном сосредоточено между его обкладками и является практически однородным\n', textAlign: TextAlign.justify,),
+
+        const Text('Вблизи краёв пластин однородность поля нарушается, однако '
+            'этим часто пренебрегают, когда расстояние между пластинами '
+            'значительно меньше их размеров:\n', textAlign: TextAlign.justify,),
+
+        const Image(image: AssetImage('images/thermodynamic/Kon.png')),
+      ]
+    );
+  }
+}
+
+class Ninth extends StatefulWidget {
+  const Ninth({Key? key}) : super(key: key);
+
+  @override
+  State<Ninth> createState() => _NinthState();
+}
+
+class _NinthState extends State<Ninth> {
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+
+      padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
+
+      children: [
+
+      const Text('Энергия электростатического поля конденсатора\n', textAlign: TextAlign.center,
+      style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
+
+        const Text('Формула для определения энергии электростатического поля заряженного конденсатора:\n', textAlign: TextAlign.justify,),
+
+      Column(
+        children: [
+          Row(children: [
+
+                TextButton(
+                  child: const Image(image: AssetImage('images/thermodynamic/W1.png')),
+
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: const Text(
+                          'W — энергия электростатического поля\n'
+                              'q — заряд обкладок\n'
+                              'U — апряжение между обкладками\n', textAlign: TextAlign.center,),
+
+                        padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                        behavior: SnackBarBehavior.floating,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+
+                      ),
+                    );
+                  },
+                ),
+
+                TextButton(
+                  child: const Image(image: AssetImage('images/thermodynamic/W2.png')),
+
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: const Text(
+                          'W — энергия электростатического поля\n'
+                              'C — электрическая ёмкость конденсатора\n'
+                              'U — апряжение между обкладками\n', textAlign: TextAlign.center,),
+
+                        padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                        behavior: SnackBarBehavior.floating,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+
+                      ),
+                    );
+                  },
+                ),
+
+                TextButton(
+                  child: const Image(image: AssetImage('images/thermodynamic/W3.png')),
+
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: const Text(
+                          'W — энергия электростатического поля\n'
+                              'q — заряд конденсатора\n'
+                              'C — электрическая ёмкость конденсатора\n', textAlign: TextAlign.center,),
+
+                        padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                        behavior: SnackBarBehavior.floating,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+
+                      ),
+                    );
+                  },
+                ),
+              ],
+            ),
+          ],
+        ),
+
+        const Text('Применение конденсаторов\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        const Text('Конденсаторы находят широкое применение в электротехнике, '
+            'радиотехнической и телевизионной аппаратуре, радиолокационной технике, '
+            'телефонии, технике счётно-решающих устройств, лазерной технике, '
+            'электроэнергетике (например, для улучшения коэффициента мощности '
+            'промышленных установок, регулирования напряжения в распределительных '
+            'сетях, в устройствах освещения люминесцентными лампами), металлопромышленности '
+            '(например, для плавки и термической обработки металлов), добывающей '
+            'промышленности (например, в электровзрывных устройствах), медицинской '
+            'технике (например, в рентгеновской аппаратуре, приборах электротерапии), '
+            'фототехнике (для получения вспышки света при фотографировании).\n', textAlign: TextAlign.justify,),
+
+
+
+
+
+      ]
+    );
+  }
+}
+
+
+
 
 
 
@@ -245,7 +726,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
       appBar: AppBar(title: const Text('Электростатика'),),
 
       body: PageView(
-        children: const [
+        children: [
           First(),
 
           Second(),
@@ -253,6 +734,16 @@ class _ElectrostaticsState extends State<Electrostatics> {
           Thirt(),
 
           Fourth(),
+
+          Fifen(),
+
+          Sixth(),
+
+          Seventh(),
+
+          Eighth(),
+
+          Ninth(),
         ],
       ),
     );
