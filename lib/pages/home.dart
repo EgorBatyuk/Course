@@ -45,8 +45,8 @@ class _TenState extends State<Ten> {
               title: Text('Электродинамика'),
               children: [
                 ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/electrostatics');}, child: Text('Электростатика')), //Молекулрная физика
-                ElevatedButton(onPressed: () {}, child: Text('Постоянный электрический ток')),
-                ElevatedButton(onPressed: () {}, child: Text('Магнитное поле. Электромагнитная индукция')),
+                ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/dc_electric_current');}, child: Text('Постоянный электрический ток')),
+                ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/magnetic_field');}, child: Text('Магнитное поле. Электромагнитная индукция')),
                 ElevatedButton(onPressed: () {}, child: Text('Электрический ток в разных средах')),
             ],
             ),

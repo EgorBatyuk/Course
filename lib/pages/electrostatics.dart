@@ -695,22 +695,10 @@ class _NinthState extends State<Ninth> {
             'промышленности (например, в электровзрывных устройствах), медицинской '
             'технике (например, в рентгеновской аппаратуре, приборах электротерапии), '
             'фототехнике (для получения вспышки света при фотографировании).\n', textAlign: TextAlign.justify,),
-
-
-
-
-
       ]
     );
   }
 }
-
-
-
-
-
-
-
 
 class Electrostatics extends StatefulWidget {
   const Electrostatics({Key? key}) : super(key: key);

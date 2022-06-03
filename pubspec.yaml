@@ -62,7 +62,7 @@ flutter:
   assets:
     - images/molecular/
     - images/thermodynamic/
-    - images/thermodynamic/
+    - images/dc_electric/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
