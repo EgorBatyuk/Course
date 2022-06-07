@@ -230,9 +230,6 @@ class Fourth extends StatelessWidget {
 }
 
 
-
-
-
 class Electricity extends StatefulWidget {
   const Electricity({Key? key}) : super(key: key);
 
