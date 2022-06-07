@@ -1,4 +1,5 @@
 import 'package:course/pages/dc_electric_current.dart';
+import 'package:course/pages/electricity.dart';
 import 'package:course/pages/magnetic_field.dart';
 import 'package:course/pages/molecular_physics.dart';
 import 'package:flutter/material.dart';
@@ -24,6 +25,7 @@ void main() => runApp(MaterialApp(
     '/electrostatics': (context) => Electrostatics(),
     '/dc_electric_current': (context) => DcElectricCurrent(),
     '/magnetic_field': (context) => MagneticField(),
+    '/electricity': (context) => Electricity(),
   },
 )
 );
