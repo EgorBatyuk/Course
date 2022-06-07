@@ -458,14 +458,92 @@ class _SixthState extends State<Sixth> {
 
         const Text('Закон электромагнитной индукции\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
 
+        const Text('Закон электромагнитной индукции Фарадея — ЭДС электромагнитной '
+            'индукции в контуре равна скорости изменения магнитного потока через '
+            'поверхность, ограниченную контуром, взятой с противоположным знаком:', textAlign: TextAlign.justify,),
+
+        TextButton(
+          child: const Image(image: AssetImage('images/magnetic_field/Eind.png')),
+
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: const Text(
+                  'E — ЭДС электромагнитной индукции в контуре\n'
+                      'Ф — магнитный поток\n'
+                      'Δt — промежуток времени\n', textAlign: TextAlign.center,),
+
+                padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+
+              ),
+            );
+          },
+        ),
       ]
     );
   }
 }
 
+class Seventh extends StatefulWidget {
+  const Seventh({Key? key}) : super(key: key);
 
+  @override
+  State<Seventh> createState() => _SeventhState();
+}
 
+class _SeventhState extends State<Seventh> {
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
 
+      padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
+
+      children: [
+
+        const Text('Явление самоиндукции. Индуктивность. '
+            'Энергия магнитного поля катушки с током\n', textAlign: TextAlign.center,
+        style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
+
+        const Text('Самоиндукция\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
+
+        const Text('Самоиндукция — явление возникновения ЭДС индукции в электрической '
+            'цепи в результате изменения силы тока в этой же цепи.\n', textAlign: TextAlign.justify,),
+
+        const Text('Возникающую в этом случае ЭДС назвали электродвижущей силой '
+            'самоиндукции.\n', textAlign: TextAlign.justify,),
+
+        const Text('ЭДС самоиндукции:\n', textAlign: TextAlign.justify,),
+
+        TextButton(
+          child: const Image(image: AssetImage('images/magnetic_field/Ec.png')),
+
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: const Text(
+                  'E — ЭДС самоиндукции\n'
+                      'L — индуктивность\n'
+                      'ΔI — сила тока\n'
+                      'Δt — промежуток времени\n', textAlign: TextAlign.center,),
+
+                padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+
+              ),
+            );
+          },
+        ),
+      ]
+    );
+  }
+}
 
 
 class MagneticField extends StatelessWidget {
@@ -488,6 +566,8 @@ class MagneticField extends StatelessWidget {
           Fifen(),
 
           Sixth(),
+
+          Seventh(),
 
         ],
       ),
