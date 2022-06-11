@@ -65,6 +65,7 @@ flutter:
     - images/dc_electric/
     - images/magnetic_field/
     - images/electricity/
+    - images/mechanical_vibrations_and_waves/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

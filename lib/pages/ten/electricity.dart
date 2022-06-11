@@ -1,4 +1,4 @@
-import 'package:course/pages/electrostatics.dart';
+import 'package:course/pages/ten/electrostatics.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

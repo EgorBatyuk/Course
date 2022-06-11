@@ -133,7 +133,6 @@ class _SecondState extends State<Second> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
-
               ),
             );
           },
@@ -154,7 +153,6 @@ class _SecondState extends State<Second> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
-
               ),
             );
           },
@@ -296,7 +294,6 @@ class _ThirtState extends State<Thirt> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
-
               ),
             );
           },
@@ -449,11 +446,7 @@ class _FourthState extends State<Fourth> {
               );
             },
           ),
-          
-
-
         ]
-
     );
   }
 }
@@ -508,7 +501,6 @@ class _FifenState extends State<Fifen> {
           ),
 
          const Text('При постоянных массе и молярной массе отношение произведения давления идеального газа и его объёма к абсолютной температуре является величиной постоянной.\n'),
-
 
          const Text('Уравнение состояния можно применять для газов при следующих условиях:\n'
                     '\t\t\t\t1) не очень большие давления (пока собственный объём всех молекул газа'
@@ -573,14 +565,11 @@ class _FifenState extends State<Fifen> {
                   );
                 },
               ),
-
-
             ],
           ),
 
           Text('Парциальное давление — давление газа, входящего в состав газовой '
               'смеси, если бы он один занимал весь объём, предоставленный смеси, при той же температуре.\n', textAlign: TextAlign.justify,),
-
         ]
     );
   }
@@ -649,7 +638,6 @@ class _SixthState extends State<Sixth> {
         Image(image: AssetImage('images/molecular/graf_izohor.png')),
 
         Text('Эту линию называют изохорой.'),
-
       ],
     );
   }
@@ -713,7 +701,6 @@ class _SeventhState extends State<Seventh> {
 }
 
 
-
 class Eighth extends StatelessWidget {
   const Eighth({Key? key}) : super(key: key);
 
@@ -755,7 +742,6 @@ class Ninth extends StatelessWidget {
         Text('Испарение и конденсация. Насыщенный пар\n', textAlign: TextAlign.center,
           style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
 
-
         Text('Испарение и конденсация\n', style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
 
         Text('Процесс испарения и конденсации:\n', textAlign: TextAlign.justify,),
@@ -794,7 +780,6 @@ class Ninth extends StatelessWidget {
         Text('Ненасыщенный пар — пар, давление (плотность) которого меньше давления (плотности) насыщенного пара при той же'
         'температуре.\n', textAlign: TextAlign.justify,)
       ],
-
     );
   }
 }
@@ -821,12 +806,9 @@ class _TenthState extends State<Tenth> {
         Text('Абсолютная влажность Uп воздуха — физическая величина, равная '
             'плотности водяного пара, находящегося в воздухе при данных условиях.\n', textAlign: TextAlign.justify,),
 
-
-
         Text('Относительная влажность φ воздуха — физическая величина, равная '
     'отношению абсолютной влажности Uп к плотности Uн насыщенного водяного пара'
     'при данной температуре\n', textAlign: TextAlign.justify,),
-
 
         Text('Относительная влажность:'),
         TextButton(
@@ -864,11 +846,6 @@ class _TenthState extends State<Tenth> {
     );
   }
 }
-
-
-
-
-
 
 class Molecular extends StatefulWidget {
   const Molecular({Key? key}) : super(key: key);
