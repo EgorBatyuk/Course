@@ -1,5 +1,6 @@
 import 'package:course/pages/eleven/electromagnetic_fluctuations_and_waves.dart';
 import 'package:course/pages/eleven/mechanical_vibrations_and_waves.dart';
+import 'package:course/pages/eleven/optics.dart';
 import 'package:course/pages/ten/dc_electric_current.dart';
 import 'package:course/pages/ten/electricity.dart';
 import 'package:course/pages/ten/magnetic_field.dart';
@@ -33,6 +34,9 @@ void main() => runApp(MaterialApp(
 
     '/mechanical_vibrations_and_waves': (context) => VibrationsWaves(),
     '/electromagnetic_fluctuations_and_waves': (context) => Electromagnetic(),
+    '/optics': (context) => Optics(),
+
+    '/result': (context) => Results(),
 
 
   },

@@ -67,6 +67,7 @@ flutter:
     - images/electricity/
     - images/mechanical_vibrations_and_waves/
     - images/electromagnetic_fluctuations_and_waves/
+    - images/optics/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

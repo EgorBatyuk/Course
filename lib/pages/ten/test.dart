@@ -1,9 +1,11 @@
+import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-enum Qaz { q, a, e, z}
+enum Qaz {q, a, e, z, x}
 
 int count = 0;
+bool clear = false;
 
   class First extends StatefulWidget {
   const First({Key? key}) : super(key: key);
@@ -14,10 +16,10 @@ int count = 0;
 
 class _FirstState extends State<First> {
 
-  Qaz _qaz = Qaz.q;
+  Qaz _qaz = Qaz.x;
 
   void _myFunction() {
-    if (_qaz == Qaz.a){count+=1;};
+    if (_qaz == Qaz.a){count+=1;}
   }
 
   @override
@@ -25,7 +27,7 @@ class _FirstState extends State<First> {
     return Column(
       children: [
 
-        Text('В каких единицах измеряют массы атомов и молекул?\n', textAlign: TextAlign.justify,),
+        Text('В каких единицах измеряют массы атомов и молекул?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Килограммы'),
@@ -59,8 +61,7 @@ class _FirstState extends State<First> {
         ),
 
         TextButton(
-          onPressed: _myFunction, child: Text('check'),),
-        Text('$count'),
+          onPressed: _myFunction, child: Text('Проверить'),),
       ],
     );
   }
@@ -76,17 +77,17 @@ class Second extends StatefulWidget {
 
 class _SecondState extends State<Second> {
 
-  Qaz _qaz = Qaz.q;
+  Qaz _qaz = Qaz.x;
 
   void _myFunction() {
-    if (_qaz == Qaz.q){count+=1;};
+    if (_qaz == Qaz.q){count+=1;}
   }
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
 
-        Text('Что такое количество вещества?\n', textAlign: TextAlign.justify,),
+        Text('Что такое количество вещества?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('отношение числа частиц N этого вещества к постоянной Авогадро NA\n', textAlign: TextAlign.justify,),
@@ -120,8 +121,7 @@ class _SecondState extends State<Second> {
         ),
 
         TextButton(
-          onPressed: _myFunction, child: Text('check'),),
-        Text('$count'),
+          onPressed: _myFunction, child: Text('Проверить'),),
       ],
     );
   }
@@ -135,10 +135,10 @@ class Thirt extends StatefulWidget {
 }
 
 class _ThirtState extends State<Thirt> {
-  Qaz _qaz = Qaz.q;
+  Qaz _qaz = Qaz.x;
 
   void _myFunction() {
-    if (_qaz == Qaz.q){count+=1;};
+    if (_qaz == Qaz.q){count+=1;}
   }
 
   @override
@@ -146,7 +146,7 @@ class _ThirtState extends State<Thirt> {
     return Column(
       children: [
 
-        Text('От чего зависит давление идеального газа?\n', textAlign: TextAlign.justify,),
+        Text('От чего зависит давление идеального газа?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('От количества молекул\n', textAlign: TextAlign.justify,),
@@ -180,8 +180,7 @@ class _ThirtState extends State<Thirt> {
         ),
 
         TextButton(
-          onPressed: _myFunction, child: Text('check'),),
-        Text('$count'),
+          onPressed: _myFunction, child: Text('Проверить'),),
       ],
     );
   }
@@ -196,7 +195,7 @@ class Fourth extends StatefulWidget {
 
 class _FourthState extends State<Fourth> {
 
-  Qaz _qaz = Qaz.q;
+  Qaz _qaz = Qaz.x;
 
   void _myFunction() {
     if (_qaz == Qaz.e){count+=1;}
@@ -207,7 +206,7 @@ class _FourthState extends State<Fourth> {
     return Column(
       children: [
 
-        Text('Какая величина характеризует состояние теплового равновесия?\n', textAlign: TextAlign.justify,),
+        Text('Какая величина характеризует состояние теплового равновесия?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Постоянная Авагадро\n', textAlign: TextAlign.justify,),
@@ -241,8 +240,7 @@ class _FourthState extends State<Fourth> {
         ),
 
         TextButton(
-          onPressed: _myFunction, child: Text('check'),),
-        Text('$count'),
+          onPressed: _myFunction, child: Text('Проверить'),),
       ],
     );
   }
@@ -257,7 +255,7 @@ class Fifen extends StatefulWidget {
 
 class _FifenState extends State<Fifen> {
 
-  Qaz _qaz = Qaz.q;
+  Qaz _qaz = Qaz.x;
 
   void _myFunction() {
     if (_qaz == Qaz.q){count+=1;}
@@ -268,7 +266,7 @@ class _FifenState extends State<Fifen> {
     return Column(
       children: [
 
-        Text('Какое давление называют парциальным?\n', textAlign: TextAlign.justify,),
+        Text('Какое давление называют парциальным?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Давление газа, входящего в состав газовой смеси, если бы он один занимал весь объём, предоставленный смеси, при той же '
@@ -305,8 +303,7 @@ class _FifenState extends State<Fifen> {
         ),
 
         TextButton(
-          onPressed: _myFunction, child: Text('check'),),
-        Text('$count'),
+          onPressed: _myFunction, child: Text('Проверить'),),
       ],
     );
   }
@@ -321,7 +318,7 @@ class Sixth extends StatefulWidget {
 
 class _SixthState extends State<Sixth> {
 
-  Qaz _qaz = Qaz.q;
+  Qaz _qaz = Qaz.x;
 
   void _myFunction() {
     if (_qaz == Qaz.a){count+=1;}
@@ -332,7 +329,7 @@ class _SixthState extends State<Sixth> {
     return Column(
       children: [
 
-        Text('Какое давление называют парциальным?\n', textAlign: TextAlign.justify,),
+        Text('Какое давление называют парциальным?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('При постоянном количестве частиц\n', textAlign: TextAlign.justify,),
@@ -366,8 +363,7 @@ class _SixthState extends State<Sixth> {
         ),
 
         TextButton(
-          onPressed: _myFunction, child: Text('check'),),
-        Text('$count'),
+          onPressed: _myFunction, child: Text('Проверить'),),
       ],
     );
   }
@@ -382,7 +378,7 @@ class Seventh extends StatefulWidget {
 
 class _SeventhState extends State<Seventh> {
 
-  Qaz _qaz = Qaz.q;
+  Qaz _qaz = Qaz.x;
 
   void _myFunction() {
     if (_qaz == Qaz.e){count+=1;}
@@ -393,7 +389,7 @@ class _SeventhState extends State<Seventh> {
     return Column(
       children: [
 
-        Text('Какие тела называют твёрдыми?\n', textAlign: TextAlign.justify,),
+        Text('Какие тела называют твёрдыми?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Тело, крепокость которого не превышает шрупкость\n', textAlign: TextAlign.justify,),
@@ -428,8 +424,7 @@ class _SeventhState extends State<Seventh> {
         ),
 
         TextButton(
-          onPressed: _myFunction, child: Text('check'),),
-        Text('$count'),
+          onPressed: _myFunction, child: Text('Проверить'),),
       ],
     );
   }
@@ -444,7 +439,7 @@ class Eighth extends StatefulWidget {
 
 class _EighthState extends State<Eighth> {
 
-  Qaz _qaz = Qaz.q;
+  Qaz _qaz = Qaz.x;
 
   void _myFunction() {
     if (_qaz == Qaz.e){count+=1;}
@@ -455,7 +450,7 @@ class _EighthState extends State<Eighth> {
     return Column(
       children: [
 
-        Text('Каковы особенности строения кристаллических твёрдых тел?\n', textAlign: TextAlign.justify,),
+        Text('Каковы особенности строения кристаллических твёрдых тел?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Частицы кристалла образуют упорядоченную пространственную структуру в виде кристаллической решётки\n', textAlign: TextAlign.justify,),
@@ -489,8 +484,7 @@ class _EighthState extends State<Eighth> {
         ),
 
         TextButton(
-          onPressed: _myFunction, child: Text('check'),),
-        Text('$count'),
+          onPressed: _myFunction, child: Text('Проверить'),),
       ],
     );
   }
@@ -505,7 +499,7 @@ class Ninth extends StatefulWidget {
 
 class _NinthState extends State<Ninth> {
 
-  Qaz _qaz = Qaz.q;
+  Qaz _qaz = Qaz.x;
 
   void _myFunction() {
     if (_qaz == Qaz.e){count+=1;}
@@ -516,7 +510,7 @@ class _NinthState extends State<Ninth> {
     return Column(
       children: [
 
-        Text('Что в строении жидкостей определяет их свойства?\n', textAlign: TextAlign.justify,),
+        Text('Что в строении жидкостей определяет их свойства?\n', textAlign: TextAlign.justify, style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Расстояния между молекулами, соизмеримые с их собственными размерами\n', textAlign: TextAlign.justify,),
@@ -528,9 +522,9 @@ class _NinthState extends State<Ninth> {
             });
           },
         ),
-        RadioListTile<Qaz>(
+        RadioListTile(
           title: const Text('Возможность относительно свободного перемещения молекул\n', textAlign: TextAlign.justify,),
-          value: Qaz.a,
+          value: Qaz.e,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
             setState(() {
@@ -538,9 +532,10 @@ class _NinthState extends State<Ninth> {
             });
           },
         ),
+
         RadioListTile(
           title: const Text('Всё сразу\n', textAlign: TextAlign.justify,),
-          value: Qaz.e,
+          value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
             setState(() {
@@ -560,8 +555,7 @@ class _NinthState extends State<Ninth> {
         ),
 
         TextButton(
-          onPressed: _myFunction, child: Text('check'),),
-        Text('$count'),
+          onPressed: _myFunction, child: Text('Проверить'),),
       ],
     );
   }
@@ -576,18 +570,19 @@ class Tenth extends StatefulWidget {
 
 class _TenthState extends State<Tenth> {
 
-  Qaz _qaz = Qaz.q;
+  Qaz _qaz = Qaz.x;
 
   void _myFunction() {
     if (_qaz == Qaz.a){count+=1;}
   }
+
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
 
-        Text('Какой пар называют насыщенным?\n', textAlign: TextAlign.justify,),
+        Text('Какой пар называют насыщенным?\n', textAlign: TextAlign.justify , style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Пар, давление (плотность) которого меньше давления (плотности) насыщенного пара при той же '
@@ -622,15 +617,62 @@ class _TenthState extends State<Tenth> {
         ),
 
         TextButton(
-          onPressed: _myFunction, child: Text('check'),),
-        Text('$count'),
+          onPressed: _myFunction, child: Text('Проверить'),),
       ],
     );
   }
 }
 
 
+class Button extends StatelessWidget {
+  const Button({Key? key}) : super(key: key);
 
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/result');}, child: Text('Результат')),
+      ]
+    );
+  }
+}
+
+class Results extends StatelessWidget {
+  const Results({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Результат')),
+
+      body: Center(
+        child: Column(
+          children: [
+            Text('$count', style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.w600)),
+
+            ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/');}, child: Text('На главную')),
+          ],
+        )
+      )
+    );
+  }
+}
+
+class Clear extends StatefulWidget {
+  const Clear({Key? key}) : super(key: key);
+
+  @override
+  State<Clear> createState() => _ClearState();
+}
+
+class _ClearState extends State<Clear> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: ElevatedButton(onPressed: () {count = 0;}, child: Text('Начать Тест')),
+    );
+  }
+}
 
 
 
@@ -643,33 +685,27 @@ class Test extends StatefulWidget {
 }
 
 class _TestState extends State<Test> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('тест по основам молекулярной физике'),),
 
       body: ListView(
-        children: [
+        padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
+        children: const [
+          Clear(),
           First(),
-
           Second(),
-
           Thirt(),
-
           Fourth(),
-
           Fifen(),
-
           Sixth(),
-
           Seventh(),
-
           Eighth(),
-
           Ninth(),
-
           Tenth(),
-
+          Button(),
         ],
       ),
     );

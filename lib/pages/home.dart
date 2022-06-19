@@ -1,3 +1,4 @@
+import 'package:course/pages/ten/test.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -83,7 +84,7 @@ class _ElevenState extends State<Eleven> {
           children: [
             ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mechanical_vibrations_and_waves');}, child: Text('Механический колебания и волны')),
             ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/electromagnetic_fluctuations_and_waves');}, child: Text('Электромагнитные колебания и волны')),
-            ElevatedButton(onPressed: () {}, child: Text('Оптика')),
+            ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/optics');}, child: Text('Оптика')),
             ElevatedButton(onPressed: () {}, child: Text('Основы специальной теории относительности')),
             ElevatedButton(onPressed: () {}, child: Text('Фотоны. Действия света')),
             ElevatedButton(onPressed: () {}, child: Text('Физика атома')),

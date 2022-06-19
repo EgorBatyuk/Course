@@ -357,8 +357,6 @@ class Seventh extends StatelessWidget {
   }
 }
 
-
-
 class Electromagnetic extends StatefulWidget {
   const Electromagnetic({Key? key}) : super(key: key);
 
