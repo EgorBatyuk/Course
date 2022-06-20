@@ -14,6 +14,8 @@ import 'package:course/pages/ten/test.dart';
 import 'package:course/pages/ten/electrostatics.dart';
 import 'package:course/pages/ten/thermodynamic.dart';
 
+import 'pages/eleven/theory_of_relativity.dart';
+
 void main() => runApp(MaterialApp(
   theme:ThemeData(
     primaryColor: Colors.black12,
@@ -35,6 +37,8 @@ void main() => runApp(MaterialApp(
     '/mechanical_vibrations_and_waves': (context) => VibrationsWaves(),
     '/electromagnetic_fluctuations_and_waves': (context) => Electromagnetic(),
     '/optics': (context) => Optics(),
+
+    '/theory_of_relativity': (context) => Relativity(),
 
     '/result': (context) => Results(),
 
