@@ -410,34 +410,199 @@ class _SixthState extends State<Sixth> {
         text('Закон преломления:'),
 
         TextButton(
-          child: const Image(image: AssetImage('images/optics/load.png')),
+          child: const Image(image: AssetImage('images/optics/load_sin.png')),
 
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
                 content: const Text(
-                  'dsinθ — главные дифракционные максимумы, наблюдаемые под углом θ\n'
-                      'm — порядок максимума или порядок спектра\n'
-                      'λ — длина волны падающего излучения\n', textAlign: TextAlign.center,),
+                  'sinα — синус угла падения\n'
+                      'sinγ — синус угла преломления\n'
+                      'n2 — абсолютный показатель преломления второй среды\n'
+                      'n1 — абсолютный показатель преломления первой среды\n'
+                      'n21 — относительный показатель преломления\n', textAlign: TextAlign.center,),
 
                 padding: const EdgeInsets.symmetric(horizontal: 15.0,),
                 behavior: SnackBarBehavior.floating,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
-
               ),
             );
           },
         ),
+        
+        text('Закон преломления световых волн (света):\n'
+            '\t\t\t\tОтношение синуса угла падения к синусу угла преломления есть величина '
+            'постоянная для двух данных сред и равная относительному показателю '
+            'преломления второй среды относительно первой;\n'
+            '\t\t\t\tЛучи, падающий и преломленный, лежат в одной плоскости с перпендикуляром, '
+            'в точке падения луча в плоскости границы раздела двух сред.'),
+        
+        text('При переходе света из оптически более плотной среды I в оптически менее '
+            'плотную среду II угол преломления γ становится больше угла падения α'),
+        
+        text('По мере увеличения угла падения, при некотором значении α0, угол '
+            'преломления станет γ = 90°, явление называется полным отражением света.'),
 
+        text('Угол α0, при котором возникает полное отражение, называется предельным '
+            'углом полного отражения.'),
+      ],
+    );
+  }
+}
+
+class Seventh extends StatelessWidget {
+  const Seventh({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: PADING,
+
+      children: [
+        title('Прохождение света через оптические элементы'),
+
+        text('Луч света, проходя через плоскопараллельную пластинку, с обеих сторон '
+            'которой находится одна и та же среда, смещается на некоторое расстояние '
+            'перпендикулярно своему начальному направлению.'),
+        const Image(image: AssetImage('images/optics/light.png')),
       ],
     );
   }
 }
 
 
+class Eighth extends StatefulWidget {
+  const Eighth({Key? key}) : super(key: key);
 
+  @override
+  State<Eighth> createState() => _EighthState();
+}
+
+class _EighthState extends State<Eighth> {
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: PADING,
+      children: [
+        title('Формула тонкой линзы'),
+
+        text('Величина, обратная фокусному расстоянию линзы, выраженному в метрах, '
+            'называется ее оптической силой: D = 1/F.'),
+        text('Линза считается тонкой, еси е толщина в центре намного меньше '
+            'радиусов ограничивающих ее поверхностей.'),
+        text('Линза является собирающей если толщина в центре больше толщины у '
+            'краев и ее показатель преломления больше показателя преломления окружающей '
+            'среды.'),
+        text('Точка линзы, проходя через которую луч не преломляется, называется '
+            'оптическим центром.'),
+        text('Прямая линия, проходящая через оптический центр линзы, не совпадающая '
+            'с главной оптической осью, называется побочной оптической осью.'),
+        text('Плоскость, проходящая через оптический центр тонкой линзы перпендикулярно '
+            'главной оптической оси, называется главной плоскостью линзы.'),
+        text('Точка, в которую собирается узкий пучек света после преломления в '
+            'линзе, распространяющийся параллельно главной оптической оси, называется '
+            'главным фокусом F линзы.'),
+        text('Расстояние от оптического центра линзы до ее главного фокуса называется '
+            'фокусным расстоянием линзы.'),
+        text('Плоскость, проходящая через главный фокус перпендикулярно главной '
+            'оптической оси, называется фокальной плоскостью.'),
+        text('Между фокусным расстоянием тонкой линзы, расстоянием от предмета до '
+            'линзы и от линзы до изображения существует определенная количественная '
+            'зависимость, называемая формулой тонкой линзы:'),
+        TextButton(
+          child: const Image(image: AssetImage('images/optics/F1.png')),
+
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: const Text(
+                  'F — главный фокус линзы\n'
+                      'd — расстояние от предмета до линзы\n'
+                      'f — расстояние от линзы до изображения\n', textAlign: TextAlign.center,),
+
+                padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+              ),
+            );
+          },
+        ),
+        text('Правило знаков:\n'
+            '\t\t\t\tДля собирающей линзы, действительного источника и действительного '
+            'изображения величины F,d,f считаются положительными\n'
+            '\t\t\t\tДля рассеивающей линзы, мнимого источника и мнимого изображения '
+            '— F,d,f считаются отрицательными.'),
+        text('Линейным увеличением Г называется отношение линейного размера изображения '
+            'h\' к линейному размеру предмета h:'),
+        TextButton(
+          child: const Image(image: AssetImage('images/optics/G.png')),
+
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: const Text(
+                  'Г — линейное увеличение\n'
+                      'h\' — линейный размер изображения\n'
+                      'h — линейный размер предмета\n', textAlign: TextAlign.center,),
+
+                padding: const EdgeInsets.symmetric(horizontal: 15.0,),
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+              ),
+            );
+          },
+        ),
+      ],
+    );
+  }
+}
+
+class Ninth extends StatelessWidget {
+  const Ninth({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: PADING,
+      children: [
+        title('Оптические приборы для получения действительных изображений'),
+        text('Фотоаппарат — оптическое устройство, предназначенное для получения '
+            'действительных уменьшенных обратных изображений предметов на светочувствительной '
+            'матрице.'),
+      ],
+    );
+  }
+}
+
+class Tenth extends StatelessWidget {
+  const Tenth({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: PADING,
+      children: [
+        title('Оптические приборы для увеличения угла зрения'),
+        text('Близорукость — дефект зрения, при котором глаз видит удаленный предмет '
+            'не резко, а расплывчато.'),
+        text('Дальнозоркость — дефект зрения, при котором глаз не в состоянии видеть '
+            'резко близкие предметы.'),
+        text('Очки — первый оптический прибор, примененный человеком.'),
+        text('Лупа — оптический прибор, позволяющий увеличить угол зрения.'),
+        text('Микроскоп — оптический прибор для получения сильно увеличенных '
+            'изображений объектов или деталей их структуры, не видимых невооруженным глазом.'),
+        text('Две маленькие подзорные трубы, составленные вместе для двух глаз, '
+            'дают биноколь.')
+      ],
+    );
+  }
+}
 
 
 class Optics extends StatefulWidget {
@@ -461,6 +626,10 @@ class _OpticsState extends State<Optics> {
           Thirt(),
           Fourth(),
           Fifen(),
+          Sixth(),
+          Seventh(),
+          Eighth(),
+          Ninth(),
         ],
 
       ),

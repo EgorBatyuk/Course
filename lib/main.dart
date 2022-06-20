@@ -38,6 +38,8 @@ void main() => runApp(MaterialApp(
 
     '/result': (context) => Results(),
 
+    '/mol': (context) =>Test(),
+
 
   },
 )

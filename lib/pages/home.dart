@@ -13,19 +13,16 @@ class Ten extends StatefulWidget {
 class _TenState extends State<Ten> {
   @override
   Widget build(BuildContext context) {
-    return ExpansionTile(
+    return Center(
+      child:
+
+      Column(
+      children: [
+
+
+      ExpansionTile(
       title: Text('10 Класс'),
       children: [
-        ElevatedButton(
-          child: Text('Формулы'),
-          onPressed: () {
-            Navigator.pushNamed(context, '/formuls_10');
-          },
-        ),
-
-        ExpansionTile(  //Теория 10
-          title: Text('Теория'),
-          children: [
 
             ExpansionTile(  //Молекулрная физика
               title: Text('Молекулярная физика'),
@@ -33,8 +30,6 @@ class _TenState extends State<Ten> {
                 ElevatedButton(
                     onPressed: () {Navigator.pushNamed(context, '/molecular_physics');},
                     child: Text('Основы молекулярно-кинетической теории')),
-
-                ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/test');}, child: Text('Тест')),
 
                 ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/thermodynamics');}, child: Text('Основы термодинамики')),
 
@@ -51,48 +46,26 @@ class _TenState extends State<Ten> {
                 ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/electricity');}, child: Text('Электрический ток в разных средах')),
             ],
             ),
+          ],
+        ),
 
+    ExpansionTile(
+      title: Text('11 Класс'),
+      children: [
+
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mechanical_vibrations_and_waves');}, child: Text('Механический колебания и волны')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/electromagnetic_fluctuations_and_waves');}, child: Text('Электромагнитные колебания и волны')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/optics');}, child: Text('Оптика')),
+        ElevatedButton(onPressed: () {}, child: Text('Основы специальной теории относительности')),
+        ElevatedButton(onPressed: () {}, child: Text('Фотоны. Действия света')),
+        ElevatedButton(onPressed: () {}, child: Text('Физика атома')),
+        ElevatedButton(onPressed: () {}, child: Text('Ядерная физика и элементарные частицы')),
           ],
         ),
       ],
-
+    ),
     );
-  }
-}
 
-
-class Eleven extends StatefulWidget {
-  const Eleven({Key? key}) : super(key: key);
-
-  @override
-  State<Eleven> createState() => _ElevenState();
-}
-
-class _ElevenState extends State<Eleven> {
-  @override
-  Widget build(BuildContext context) {
-    return ExpansionTile(
-      title: Text('11 Класс'),
-      children: [
-        ElevatedButton(
-          onPressed: () {},
-          child: Text('Формулы'),
-        ),
-
-        ExpansionTile(
-          title: Text('Теория'),
-          children: [
-            ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mechanical_vibrations_and_waves');}, child: Text('Механический колебания и волны')),
-            ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/electromagnetic_fluctuations_and_waves');}, child: Text('Электромагнитные колебания и волны')),
-            ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/optics');}, child: Text('Оптика')),
-            ElevatedButton(onPressed: () {}, child: Text('Основы специальной теории относительности')),
-            ElevatedButton(onPressed: () {}, child: Text('Фотоны. Действия света')),
-            ElevatedButton(onPressed: () {}, child: Text('Физика атома')),
-            ElevatedButton(onPressed: () {}, child: Text('Ядерная физика и элементарные частицы')),
-            ],
-        ),
-      ],
-    );
   }
 }
 
@@ -117,30 +90,79 @@ class _StatisticState extends State<Statistic> {
   }
 }
 
-
-
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+class Tests extends StatelessWidget {
+  const Tests({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Физика'),
-      ),
-      body: Center(
-        child: ListView(
-          children: [
-            Column(
-            children:  [
-              Statistic(),
-              Ten(),
-              Eleven(),
-        ],
-      ),
-          ],
-        )
-        ),
-      );
+    return Column(
+      children: [
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Основы молекулярной физики')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Основы термодинамики')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Электростатика')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Постоянный электрический ток')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Магнитное поле. Электромагнитная индукция')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Электрический ток в разных средах')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Механический колебания и волны')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Оптика')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Основы специальной теории относительности')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Фотоны. Действия света')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Физика атома')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Ядерная физика и элементарные частицы')),
+      ],
+    );
   }
 }
+
+
+class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+
+  int _selectedIndex = 0;
+  static const TextStyle optionStyle =
+  TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+  static const List<Widget> _widgetOptions = <Widget>[
+    Ten(),
+    Tests(),
+  ];
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
+    @override
+    Widget build(BuildContext context) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text('Физика'),
+        ),
+        body: Center(
+          child: _widgetOptions.elementAt(_selectedIndex),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.thermostat),
+              label: 'Теория',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.business),
+              label: 'Тесты',
+            ),
+
+          ],
+          currentIndex: _selectedIndex,
+          selectedItemColor: Colors.amber[800],
+          onTap: _onItemTapped,
+        ),
+      );
+    }
+  }
