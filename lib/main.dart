@@ -21,6 +21,9 @@ import 'pages/eleven/photons.dart';
 import 'pages/eleven/theory_of_relativity.dart';
 import 'pages/statistic.dart';
 import 'pages/tests/test_3.dart';
+import 'pages/tests/test_4.dart';
+import 'pages/tests/test_5.dart';
+import 'pages/tests/test_6.dart';
 
 void main() => runApp(MaterialApp(
       theme: ThemeData(
@@ -46,9 +49,15 @@ void main() => runApp(MaterialApp(
         '/result': (context) => const Results(),
         '/result_2': (context) => const Results_2(),
         '/result_3': (context) => const Results_3(),
+        '/result_4': (context) => const Results_4(),
+        '/result_5': (context) => const Results_5(),
+        '/result_6': (context) => const Results_6(),
         '/mol': (context) => const Test(),
         '/test_2': (context) => const Termodinamica(),
         '/test_3': (context) => const Test_3(),
+        '/test_4': (context) => const Test_4(),
+        '/test_5': (context) => const Test_5(),
+        '/test_6': (context) => const Test_6(),
         '/statistic': (context) => const Statistic(),
         '/nuclear_physics': (context) => Nuclear(),
         '/atom': (context) => Atom(),
