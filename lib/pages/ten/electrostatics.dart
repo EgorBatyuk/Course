@@ -43,8 +43,6 @@ class _FirstState extends State<First> {
         
         const Text('Элементарный заряд — электрический заряд, модуль которого минимален\n', textAlign: TextAlign.justify,),
 
-        const Image(image: AssetImage('images/thermodynamic/e.png')),
-
         const Text('Если каким-нибудь '
         'образом создать в таком теле избыток зарядов одного знака, то оно окажется '
         'заряженным. Заряд тела q образуется совокупностью элементарных зарядов и '
@@ -452,7 +450,7 @@ class _SeventhState extends State<Seventh> {
         const Text('Связь между напряжением и напряжённостью однородного электростатического поля\n',
           style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600),),
 
-        const Text('. Термин «напряжение» ввёл в 1792 г. Вольта.\n', textAlign: TextAlign.justify,),
+        const Text('Термин «напряжение» ввёл в 1792 г. Вольта.\n', textAlign: TextAlign.justify,),
 
         const Text('Отметим, что для электростатических полей понятия «электрическое '
             'напряжение» и «разность потенциалов» тождественны\n', textAlign: TextAlign.justify,),

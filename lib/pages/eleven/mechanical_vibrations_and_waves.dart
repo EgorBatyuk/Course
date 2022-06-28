@@ -1,6 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+Text text(string) => Text(string+'\n', textAlign: TextAlign.justify,);
+Text title(string) => Text(string+'\n', textAlign: TextAlign.center,
+  style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),);
+
+
 class First extends StatefulWidget {
   const First({Key? key}) : super(key: key);
 
@@ -213,6 +218,8 @@ class Fourth extends StatelessWidget {
         padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
 
         children: const [
+          Text('Свободные и вынужденные колебания. Резонанс\n', textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),),
           Text('Силы взаимодействия тел системы называют внуренними\n', textAlign: TextAlign.justify,),
 
           Text('Силы, которые действуют на тела системы со стороны внешних сил, '
@@ -221,7 +228,7 @@ class Fourth extends StatelessWidget {
           Text('Колебания, происходящие с постоянной во времени амплитудой, называются '
               'незатухающими колебаниями.\n', textAlign: TextAlign.justify,),
 
-          Text('незатухающие колебания, которые совершает система около положения '
+          Text('Незатухающие колебания, которые совершает система около положения '
               'устойчивого равновесия под действием внутренних сил после того, как '
               'она была выведена из состояния равновесия и предоставления сомой '
               'себе, называются свободными колебаниями.\n', textAlign: TextAlign.justify,),
@@ -234,7 +241,7 @@ class Fourth extends StatelessWidget {
               'колебаниями.\n', textAlign: TextAlign.justify,),
 
           Text('Колебания тел под действием внешней периодической силы называются '
-              'вынужденными, а сила — вынуждающей.'),
+              'вынужденными, а сила — вынуждающей.\n'),
 
           Text('Резонанс — это явление резкого возрастания амплитуды вынужденнных '
               'колебаний при приближении частоты внешней силы, действующей на '
@@ -292,7 +299,7 @@ class Fifen extends StatelessWidget {
         Text('Геометрическое место точек, до которых доходят колебания к моменту '
             'времени, называется волновым фронтом.\n', textAlign: TextAlign.justify,),
 
-        Text('олна называется продольной, если колебания частиц среды происходят '
+        Text('Волна называется продольной, если колебания частиц среды происходят '
             'вдоль направления распространения волн.\n', textAlign: TextAlign.justify,),
 
         Text('Волна называется поперечной, если частицы среды колеблются в плоскости, '
@@ -321,10 +328,10 @@ class Sixth extends StatelessWidget {
             'акустикой.\n', textAlign: TextAlign.justify,),
 
         Text('Звуковые волны классифицируются по частоте:\n'
-            '1) инфразвук (v < 16ГЦ)\n'
-            '2) слышимый человеком звук (16Гц < v < 2,0*10^4Гц)\n'
-            '3) ультразвук (2,0*10^4Гц < v < 1,0*10^9Гц )\n'
-            '4) гиперзвук (10^9Гц < v < 10^12Гц/10^13Гц)\n', textAlign: TextAlign.justify,),
+            '\t\t\t\t1) инфразвук (v < 16ГЦ)\n'
+            '\t\t\t\t2) слышимый человеком звук (16Гц < v < 2,0*10^4Гц)\n'
+            '\t\t\t\t3) ультразвук (2,0*10^4Гц < v < 1,0*10^9Гц )\n'
+            '\t\t\t\t4) гиперзвук (10^9Гц < v < 10^12Гц/10^13Гц)\n', textAlign: TextAlign.justify,),
 
         Text('Поонятие интенсивность звука характеризуют энергию, переносимую '
             'звуковаой волной.\n', textAlign: TextAlign.justify,),

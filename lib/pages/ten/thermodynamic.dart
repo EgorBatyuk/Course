@@ -136,8 +136,8 @@ class _FirstState extends State<First> {
         ),
         
         const Text('Способы изменения внутренней энергии:\n'
-            '\t\t\t\t1) Совершение работы\n'
-            '\t\t\t\t2) Теплообмен\n', textAlign: TextAlign.justify,),
+            '\t\t\t\t1) совершение работы\n'
+            '\t\t\t\t2) теплообмен\n', textAlign: TextAlign.justify,),
       ],
     );
   }

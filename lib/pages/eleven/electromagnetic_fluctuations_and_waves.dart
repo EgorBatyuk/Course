@@ -1,6 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+Text text(string) => Text(string+'\n', textAlign: TextAlign.justify,);
+Text title(string) => Text(string+'\n', textAlign: TextAlign.center,
+  style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w600),);
+
+
 class First extends StatefulWidget {
   const First({Key? key}) : super(key: key);
 
@@ -112,6 +117,7 @@ class _ThirtState extends State<Thirt> {
       padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),
 
       children: [
+        title('Преобразование переменного тока. Трансформатор'),
         const Text('Трансформатор — это жлектромагнитное устройство, преобразующее переменный '
             'ток одного напряжения в переменный ток другого напряжения с сохранением '
             'его частоты.\n', textAlign: TextAlign.justify,),
@@ -175,9 +181,6 @@ class Fourth extends StatelessWidget {
 
         Text('Атомные электростанции (АЭС) работают  на энергии, выделяющейся при '
             'расщиплении ядер урана и плутония.\n', textAlign: TextAlign.justify,),
-
-        Text('Блок-схема передачи электроэнергии:\n', textAlign: TextAlign.justify,),
-        Image(image: AssetImage('images/electromagnetic_fluctuations_and_waves/img.png')),
       ]
     );
   }
@@ -250,12 +253,12 @@ class _SixthState extends State<Sixth> {
             'среде с конечной скоростью, называется электромагнитной волной.\n', textAlign: TextAlign.justify,),
 
         const Text('Теория Максвелла:\n'
-            'Модуль скорости распространения c магнитной волны в вакууме связан '
+            '\t\t\t\tМодуль скорости распространения c магнитной волны в вакууме связан '
             'с электрической постоянной E0 и магнитной постоянной µ0 следующим '
             'отношением:\n', textAlign: TextAlign.justify,),
 
         TextButton(
-          child: const Image(image: AssetImage('images/mechanical_vibrations_and_waves/c.png')),
+          child: const Image(image: AssetImage('images/electromagnetic_fluctuations_and_waves/c.png')),
 
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
@@ -277,21 +280,21 @@ class _SixthState extends State<Sixth> {
         ),
 
         const Text('Основные свойства электромагнитных волн:\n'
-            '1) распространяются не только в различных средах, но и в вакууме\n'
-            '2) в вакууме распространяются со скоростью с ≈ 3*10^ м/с\n'
-            '3) отражаются и преломляются на границах раздела сред\n'
-            '4) являются поперечными\n', textAlign: TextAlign.justify,),
+            '\t\t\t\t1) распространяются не только в различных средах, но и в вакууме\n'
+            '\t\t\t\t2) в вакууме распространяются со скоростью с ≈ 3*10^ м/с\n'
+            '\t\t\t\t3) отражаются и преломляются на границах раздела сред\n'
+            '\t\t\t\t4) являются поперечными\n', textAlign: TextAlign.justify,),
 
         const Text('Применение электромагнитных волн:\n'
-            '1) телевидение, радиосвязь, радиолокация (радиоволны)\n'
-            '2) плавка и закалка металлов в электротехнической промышленности,'
+            '\t\t\t\t1) телевидение, радиосвязь, радиолокация (радиоволны)\n'
+            '\t\t\t\t2) плавка и закалка металлов в электротехнической промышленности,'
             'изготовление постоянных магнитов (низкочастотные волны)\n'
-            '3) мобильная связь, радиолокация (радиоволны)\n'
-            '4) сварка, резка плавка металлов лазерами, приборы ночного видения '
+            '\t\t\t\t3) мобильная связь, радиолокация (радиоволны)\n'
+            '\t\t\t\t4) сварка, резка плавка металлов лазерами, приборы ночного видения '
             '(инфракрасное излучение)\n'
-            '5) люминесценция в газоразрядных лампах, лазеры (ультрафиолетовое '
+            '\t\t\t\t5) люминесценция в газоразрядных лампах, лазеры (ультрафиолетовое '
             'излучение)\n'
-            '6) дефектоскопия, диагностика и терапия в медицине, исследование'
+            '\t\t\t\t6) дефектоскопия, диагностика и терапия в медицине, исследование'
             'внутренней структуры атомов, военное дело (гамма-излучение).\n', textAlign: TextAlign.justify,),
       ]
     );
@@ -325,10 +328,10 @@ class Seventh extends StatelessWidget {
             'легко разрушает молекулы, непроходи через атмосферу.\n', textAlign: TextAlign.justify,),
 
         Text('Основные факторы, влияющие на здоровье людей:\n'
-            '1) интенсивность\n'
-            '2) режим облучения (непрерывный, прерывистый, импульсивный)\n'
-            '3) продолжительность воздействия\n'
-            '4) местное или общее воздействие\n', textAlign: TextAlign.justify,),
+            '\t\t\t\t1) интенсивность\n'
+            '\t\t\t\t2) режим облучения (непрерывный, прерывистый, импульсивный)\n'
+            '\t\t\t\t3) продолжительность воздействия\n'
+            '\t\t\t\t4) местное или общее воздействие\n', textAlign: TextAlign.justify,),
 
         Text('В бытовых приборах, промышленности, в радиолокации истользуются '
             'микроволновое излучение (длины волн от 1 мм дл 1 м).\n', textAlign: TextAlign.justify,),
@@ -385,7 +388,7 @@ class _ElectromagneticState extends State<Electromagnetic> {
 
           Sixth(),
 
-
+          Seventh(),
 
         ],
       ),
