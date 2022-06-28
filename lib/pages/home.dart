@@ -79,8 +79,8 @@ class Tests extends StatelessWidget {
       children: [
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/statistic');}, child: Text('Статистика')),
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Основы молекулярной физики')),
-        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Основы термодинамики')),
-        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Электростатика')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/test_2');}, child: Text('Основы термодинамики')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/test_3');}, child: Text('Электростатика')),
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Постоянный электрический ток')),
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Магнитное поле. Электромагнитная индукция')),
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Электрический ток в разных средах')),

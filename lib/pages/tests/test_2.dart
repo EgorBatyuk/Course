@@ -7,7 +7,7 @@ enum Qaz {q, a, e, z, x}
 int count = 0;
 bool clear = false;
 
-  class First extends StatefulWidget {
+class First extends StatefulWidget {
   const First({Key? key}) : super(key: key);
 
   @override
@@ -19,7 +19,7 @@ class _FirstState extends State<First> {
   Qaz _qaz = Qaz.x;
 
   void _myFunction() {
-    if (_qaz == Qaz.a){count+=1;}
+    if (_qaz == Qaz.q){count+=1;}
   }
 
   @override
@@ -27,10 +27,10 @@ class _FirstState extends State<First> {
     return Column(
       children: [
 
-        Text('В каких единицах измеряют массы атомов и молекул?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое внутренняя энергия макроскопического тела?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
-          title: const Text('Килограммы'),
+          title: const Text('Алгебраическая сумма кинетической энергии теплового движения всех частиц, образующих тело, и потенциальной энергии их взаимодействия'),
           value: Qaz.q,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -50,7 +50,7 @@ class _FirstState extends State<First> {
           },
         ),
         RadioListTile(
-          title: const Text('Микрограммы'),
+          title: const Text('Сумма внутренней кинетической энергии всех молекул'),
           value: Qaz.e,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -80,17 +80,17 @@ class _SecondState extends State<Second> {
   Qaz _qaz = Qaz.x;
 
   void _myFunction() {
-    if (_qaz == Qaz.q){count+=1;}
+    if (_qaz == Qaz.e){count+=1;}
   }
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
 
-        Text('Что такое количество вещества?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('От чего зависит работа, совершаемая термодинамической системой при ереходе из одного состояния в другое?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
-          title: const Text('отношение числа частиц N этого вещества к постоянной Авогадро NA\n', textAlign: TextAlign.justify,),
+          title: const Text('От вида процесса\n', textAlign: TextAlign.justify,),
           value: Qaz.q,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -100,7 +100,7 @@ class _SecondState extends State<Second> {
           },
         ),
         RadioListTile<Qaz>(
-          title: const Text('отношение постоянной Авогадро N к числу частиц N этого вещества \n', textAlign: TextAlign.justify,),
+          title: const Text('От начального и конечного состояния системы\n', textAlign: TextAlign.justify,),
           value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -110,7 +110,7 @@ class _SecondState extends State<Second> {
           },
         ),
         RadioListTile(
-          title: const Text('Масса вещества, взятого в количестве 1 моль'),
+          title: const Text('Все перечисленные пункты'),
           value: Qaz.e,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -138,7 +138,7 @@ class _ThirtState extends State<Thirt> {
   Qaz _qaz = Qaz.x;
 
   void _myFunction() {
-    if (_qaz == Qaz.q){count+=1;}
+    if (_qaz == Qaz.e){count+=1;}
   }
 
   @override
@@ -146,10 +146,10 @@ class _ThirtState extends State<Thirt> {
     return Column(
       children: [
 
-        Text('От чего зависит давление идеального газа?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Какой из перечисленных определений является определением теплообмена?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
-          title: const Text('От количества молекул\n', textAlign: TextAlign.justify,),
+          title: const Text('Передача кинетической энергии от тела с большей температурой телу с меньшей температурой без совершения работы\n', textAlign: TextAlign.justify,),
           value: Qaz.q,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -159,7 +159,7 @@ class _ThirtState extends State<Thirt> {
           },
         ),
         RadioListTile<Qaz>(
-          title: const Text('От температуры воздуха\n', textAlign: TextAlign.justify,),
+          title: const Text('Самопроизвольный процесс передачи внутренней энергии от тела с большей температурой телу с меньшей температурой\n', textAlign: TextAlign.justify,),
           value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -169,7 +169,7 @@ class _ThirtState extends State<Thirt> {
           },
         ),
         RadioListTile(
-          title: const Text('От объёма\n', textAlign: TextAlign.justify,),
+          title: const Text('самопроизвольный процесс передачи внутренней энергии от тела с большей температурой телу с меньшей температурой без совершения работы.\n', textAlign: TextAlign.justify,),
           value: Qaz.e,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -198,7 +198,7 @@ class _FourthState extends State<Fourth> {
   Qaz _qaz = Qaz.x;
 
   void _myFunction() {
-    if (_qaz == Qaz.e){count+=1;}
+    if (_qaz == Qaz.q){count+=1;}
   }
 
   @override
@@ -206,10 +206,10 @@ class _FourthState extends State<Fourth> {
     return Column(
       children: [
 
-        Text('Какая величина характеризует состояние теплового равновесия?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое количество теплоты?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
-          title: const Text('Постоянная Авагадро\n', textAlign: TextAlign.justify,),
+          title: const Text('Мера энергии, переданной телу в процессе теплообмена\n', textAlign: TextAlign.justify,),
           value: Qaz.q,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -219,7 +219,7 @@ class _FourthState extends State<Fourth> {
           },
         ),
         RadioListTile<Qaz>(
-          title: const Text('Количество молекул\n', textAlign: TextAlign.justify,),
+          title: const Text('Столько теплоты, сколько может вместить в себя предмет\n', textAlign: TextAlign.justify,),
           value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -229,7 +229,7 @@ class _FourthState extends State<Fourth> {
           },
         ),
         RadioListTile(
-          title: const Text('Средняя кинетическая энергия теплового движения частиц вещества\n', textAlign: TextAlign.justify,),
+          title: const Text('Количество теплоты (по Фаренгейту), необходимое для полного плавления предмета\n', textAlign: TextAlign.justify,),
           value: Qaz.e,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -258,7 +258,7 @@ class _FifenState extends State<Fifen> {
   Qaz _qaz = Qaz.x;
 
   void _myFunction() {
-    if (_qaz == Qaz.q){count+=1;}
+    if (_qaz == Qaz.a){count+=1;}
   }
 
   @override
@@ -266,11 +266,10 @@ class _FifenState extends State<Fifen> {
     return Column(
       children: [
 
-        Text('Какое давление называют парциальным?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое удельная теплота плавления?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
-          title: const Text('Давление газа, входящего в состав газовой смеси, если бы он один занимал весь объём, предоставленный смеси, при той же '
-        'температуре\n', textAlign: TextAlign.justify,),
+          title: const Text('Физическая величина, равная количеству теплоты, необходимого для плавления не кристалического вещества массой 1 кг\n', textAlign: TextAlign.justify,),
           value: Qaz.q,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -280,8 +279,7 @@ class _FifenState extends State<Fifen> {
           },
         ),
         RadioListTile<Qaz>(
-          title: const Text('Давление воздуха, входящего в состав газовой смеси, если бы он имел такую же температуру, предоставленный смеси, при том же '
-    'объёме\n', textAlign: TextAlign.justify,),
+          title: const Text('Физическая величина, равная количеству теплоты, нкобходимого для плавления вещества массой 1 кг\n', textAlign: TextAlign.justify,),
           value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -291,8 +289,7 @@ class _FifenState extends State<Fifen> {
           },
         ),
         RadioListTile(
-          title: const Text('Давление газа, входящего в состав газовой смеси, если бы он один занимал весь объём, предоставленный смеси, при том же '
-    'количестве частиц\n', textAlign: TextAlign.justify,),
+          title: const Text('Оба пункта верны\n', textAlign: TextAlign.justify,),
           value: Qaz.e,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -321,7 +318,7 @@ class _SixthState extends State<Sixth> {
   Qaz _qaz = Qaz.x;
 
   void _myFunction() {
-    if (_qaz == Qaz.a){count+=1;}
+    if (_qaz == Qaz.q){count+=1;}
   }
 
   @override
@@ -329,10 +326,10 @@ class _SixthState extends State<Sixth> {
     return Column(
       children: [
 
-        Text('Какое давление называют парциальным?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что происходит с  энергией при переходе от одного тела к другому?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
-          title: const Text('При постоянном количестве частиц\n', textAlign: TextAlign.justify,),
+          title: const Text('Энергия никуда не исчезает, передается от одного тела к другому\n', textAlign: TextAlign.justify,),
           value: Qaz.q,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -342,7 +339,7 @@ class _SixthState extends State<Sixth> {
           },
         ),
         RadioListTile<Qaz>(
-          title: const Text('При постоянной молярной массы\n', textAlign: TextAlign.justify,),
+          title: const Text('Энергия рассеивается в соответствии с типом принимаемого тела, часть переходит к телу\n', textAlign: TextAlign.justify,),
           value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -352,7 +349,7 @@ class _SixthState extends State<Sixth> {
           },
         ),
         RadioListTile(
-          title: const Text('При постоянном объёме\n', textAlign: TextAlign.justify,),
+          title: const Text('Энергия не переходит, а трансформируется в работу движения молекул, и таким образом передается телу\n', textAlign: TextAlign.justify,),
           value: Qaz.e,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -389,10 +386,10 @@ class _SeventhState extends State<Seventh> {
     return Column(
       children: [
 
-        Text('Какие тела называют твёрдыми?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Чему равна работа при изотермическом процессе?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
-          title: const Text('Тело, крепокость которого не превышает шрупкость\n', textAlign: TextAlign.justify,),
+          title: const Text('A=U\n', textAlign: TextAlign.justify,),
           value: Qaz.q,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -402,7 +399,7 @@ class _SeventhState extends State<Seventh> {
           },
         ),
         RadioListTile<Qaz>(
-          title: const Text('Тело, котоорое сдерживает давление в 1 атмосфер\n', textAlign: TextAlign.justify,),
+          title: const Text('A=q\n', textAlign: TextAlign.justify,),
           value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -412,8 +409,7 @@ class _SeventhState extends State<Seventh> {
           },
         ),
         RadioListTile(
-          title: const Text('Любое тело, сохраняющее '
-              'форму и объём в отсутствие внешних воздействий\n', textAlign: TextAlign.justify,),
+          title: const Text('A=Q\n', textAlign: TextAlign.justify,),
           value: Qaz.e,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -442,7 +438,7 @@ class _EighthState extends State<Eighth> {
   Qaz _qaz = Qaz.x;
 
   void _myFunction() {
-    if (_qaz == Qaz.e){count+=1;}
+    if (_qaz == Qaz.q){count+=1;}
   }
 
   @override
@@ -450,10 +446,10 @@ class _EighthState extends State<Eighth> {
     return Column(
       children: [
 
-        Text('Каковы особенности строения кристаллических твёрдых тел?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Количество теплоты переходит...\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
-          title: const Text('Частицы кристалла образуют упорядоченную пространственную структуру в виде кристаллической решётки\n', textAlign: TextAlign.justify,),
+          title: const Text('От более нагретым к менее нагретым\n', textAlign: TextAlign.justify,),
           value: Qaz.q,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -463,7 +459,7 @@ class _EighthState extends State<Eighth> {
           },
         ),
         RadioListTile<Qaz>(
-          title: const Text('Основой строения кристалла является элементарная кристаллическая ячейка\n', textAlign: TextAlign.justify,),
+          title: const Text('От менне нагретым к более нагретым \n', textAlign: TextAlign.justify,),
           value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -473,7 +469,7 @@ class _EighthState extends State<Eighth> {
           },
         ),
         RadioListTile(
-          title: const Text('Всё сразу\n', textAlign: TextAlign.justify,),
+          title: const Text('При изменении количества двигающихся молекул\n', textAlign: TextAlign.justify,),
           value: Qaz.e,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -510,10 +506,10 @@ class _NinthState extends State<Ninth> {
     return Column(
       children: [
 
-        Text('Что в строении жидкостей определяет их свойства?\n', textAlign: TextAlign.justify, style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что делает Рабочее тело теплового двигателя?\n', textAlign: TextAlign.justify, style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
-          title: const Text('Расстояния между молекулами, соизмеримые с их собственными размерами\n', textAlign: TextAlign.justify,),
+          title: const Text('Перенаправляет количество теплоты к движущимся элементам двигателя\n', textAlign: TextAlign.justify,),
           value: Qaz.q,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -523,7 +519,7 @@ class _NinthState extends State<Ninth> {
           },
         ),
         RadioListTile(
-          title: const Text('Возможность относительно свободного перемещения молекул\n', textAlign: TextAlign.justify,),
+          title: const Text('Совершает работу после получения количества теплоты\n', textAlign: TextAlign.justify,),
           value: Qaz.e,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -534,7 +530,7 @@ class _NinthState extends State<Ninth> {
         ),
 
         RadioListTile(
-          title: const Text('Всё сразу\n', textAlign: TextAlign.justify,),
+          title: const Text('Воспроизводит количество теплоты\n', textAlign: TextAlign.justify,),
           value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -543,16 +539,7 @@ class _NinthState extends State<Ninth> {
             });
           },
         ),
-        RadioListTile(
-          title: const Text('Ничего\n', textAlign: TextAlign.justify,),
-          value: Qaz.z,
-          groupValue: _qaz,
-          onChanged: (Qaz? value) {
-            setState(() {
-              _qaz = value!;
-            });
-          },
-        ),
+
 
         TextButton(
           onPressed: _myFunction, child: Text('Проверить'),),
@@ -584,11 +571,10 @@ class _TenthState extends State<Tenth> {
     return Column(
       children: [
 
-        Text('Какой пар называют насыщенным?\n', textAlign: TextAlign.justify , style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое Термодинамическая система?\n', textAlign: TextAlign.justify , style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
-          title: const Text('Пар, давление (плотность) которого меньше давления (плотности) насыщенного пара при той же '
-        'температуре\n', textAlign: TextAlign.justify,),
+          title: const Text('Система, в которой поисходят термодинамические преобразования энергии\n', textAlign: TextAlign.justify,),
           value: Qaz.q,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -598,7 +584,7 @@ class _TenthState extends State<Tenth> {
           },
         ),
         RadioListTile<Qaz>(
-          title: const Text('Пар, находящийся в состоянии динамического равновесия с жидкостью\n', textAlign: TextAlign.justify,),
+          title: const Text('Физические тела и модели в термодинамике\n', textAlign: TextAlign.justify,),
           value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -608,7 +594,7 @@ class _TenthState extends State<Tenth> {
           },
         ),
         RadioListTile(
-          title: const Text('Правильного ответа нет\n', textAlign: TextAlign.justify,),
+          title: const Text('Независимая система в другой системе, в которой происходят термодинамические процессы\n', textAlign: TextAlign.justify,),
           value: Qaz.e,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -636,30 +622,30 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
-        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/result');}, child: Text('Результат')),
-      ]
+        children: [
+          ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/result_2');}, child: Text('Результат')),
+        ]
     );
   }
 }
 
-class Results extends StatelessWidget {
-  const Results({Key? key}) : super(key: key);
+class Results_2 extends StatelessWidget {
+  const Results_2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Результат')),
+        appBar: AppBar(title: Text('Результат')),
 
-      body: Center(
-        child: Column(
-          children: [
-            Text('$count', style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.w600)),
+        body: Center(
+            child: Column(
+              children: [
+                Text('$count', style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.w600)),
 
-            ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/');}, child: Text('На главную')),
-          ],
+                ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/');}, child: Text('На главную')),
+              ],
+            )
         )
-      )
     );
   }
 }
@@ -683,14 +669,14 @@ class _ClearState extends State<Clear> {
 
 
 
-class Test extends StatefulWidget {
-  const Test({Key? key}) : super(key: key);
+class Termodinamica extends StatefulWidget {
+  const Termodinamica({Key? key}) : super(key: key);
 
   @override
-  State<Test> createState() => _TestState();
+  State<Termodinamica> createState() => _TermodinamicaState();
 }
 
-class _TestState extends State<Test> {
+class _TermodinamicaState extends State<Termodinamica> {
 
   @override
   Widget build(BuildContext context) {

@@ -7,6 +7,7 @@ import 'package:course/pages/ten/dc_electric_current.dart';
 import 'package:course/pages/ten/electricity.dart';
 import 'package:course/pages/ten/magnetic_field.dart';
 import 'package:course/pages/ten/molecular_physics.dart';
+import 'package:course/pages/tests/test_2.dart';
 import 'package:flutter/material.dart';
 
 import 'package:course/pages/ten/formuls_main.dart';
@@ -19,6 +20,7 @@ import 'package:course/pages/ten/thermodynamic.dart';
 import 'pages/eleven/photons.dart';
 import 'pages/eleven/theory_of_relativity.dart';
 import 'pages/statistic.dart';
+import 'pages/tests/test_3.dart';
 
 void main() => runApp(MaterialApp(
       theme: ThemeData(
@@ -42,7 +44,11 @@ void main() => runApp(MaterialApp(
         '/theory_of_relativity': (context) => const Relativity(),
         '/photons': (context) => const Photons(),
         '/result': (context) => const Results(),
+        '/result_2': (context) => const Results_2(),
+        '/result_3': (context) => const Results_3(),
         '/mol': (context) => const Test(),
+        '/test_2': (context) => const Termodinamica(),
+        '/test_3': (context) => const Test_3(),
         '/statistic': (context) => const Statistic(),
         '/nuclear_physics': (context) => Nuclear(),
         '/atom': (context) => Atom(),
