@@ -69,6 +69,8 @@ flutter:
     - images/electromagnetic_fluctuations_and_waves/
     - images/optics/
     - images/theory_of_relativity/
+    - images/photons/
+    - images/atom/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

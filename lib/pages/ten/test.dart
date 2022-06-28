@@ -574,6 +574,8 @@ class _TenthState extends State<Tenth> {
 
   void _myFunction() {
     if (_qaz == Qaz.a){count+=1;}
+    // if (count == 0){count = -1;}
+    // add('molecular_physics', count);
   }
 
 
@@ -627,11 +629,15 @@ class _TenthState extends State<Tenth> {
 class Button extends StatelessWidget {
   const Button({Key? key}) : super(key: key);
 
+  void qaz(context){
+    Navigator.pushNamed(context, '/result');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/result');}, child: Text('Результат')),
+        ElevatedButton(onPressed: () {qaz;}, child: Text('Результат')),
       ]
     );
   }
@@ -689,7 +695,7 @@ class _TestState extends State<Test> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('тест по основам молекулярной физике'),),
+      appBar: AppBar(title: const Text('Тест'),),
 
       body: ListView(
         padding: const EdgeInsets.only(top: 15, left: 15, right: 15,),

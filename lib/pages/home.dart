@@ -40,7 +40,8 @@ class _TenState extends State<Ten> {
             ExpansionTile(  //Электродинамика
               title: Text('Электродинамика'),
               children: [
-                ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/electrostatics');}, child: Text('Электростатика')), //Молекулрная физика
+                ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/electrostatics');}, 
+                child: Text('Электростатика')), //Молекулрная физика
                 ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/dc_electric_current');}, child: Text('Постоянный электрический ток')),
                 ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/magnetic_field');}, child: Text('Магнитное поле. Электромагнитная индукция')),
                 ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/electricity');}, child: Text('Электрический ток в разных средах')),
@@ -57,7 +58,7 @@ class _TenState extends State<Ten> {
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/electromagnetic_fluctuations_and_waves');}, child: Text('Электромагнитные колебания и волны')),
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/optics');}, child: Text('Оптика')),
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/theory_of_relativity');}, child: Text('Основы специальной теории относительности')),
-        ElevatedButton(onPressed: () {}, child: Text('Фотоны. Действия света')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/photons');}, child: Text('Фотоны. Действия света')),
         ElevatedButton(onPressed: () {}, child: Text('Физика атома')),
         ElevatedButton(onPressed: () {}, child: Text('Ядерная физика и элементарные частицы')),
           ],
@@ -69,27 +70,6 @@ class _TenState extends State<Ten> {
   }
 }
 
-class Statistic extends StatefulWidget {
-  const Statistic({Key? key}) : super(key: key);
-
-  @override
-  State<Statistic> createState() => _StatisticState();
-}
-
-class _StatisticState extends State<Statistic> {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [const SizedBox(
-        height: 300.0,
-        width: 500.0,
-        child: Card(child: Text('Hello World!')),
-      ),
-      ],
-    );
-  }
-}
-
 class Tests extends StatelessWidget {
   const Tests({Key? key}) : super(key: key);
 
@@ -97,6 +77,7 @@ class Tests extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/statistic');}, child: Text('Статистика')),
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Основы молекулярной физики')),
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Основы термодинамики')),
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Электростатика')),
