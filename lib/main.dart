@@ -20,10 +20,15 @@ import 'package:course/pages/ten/thermodynamic.dart';
 import 'pages/eleven/photons.dart';
 import 'pages/eleven/theory_of_relativity.dart';
 import 'pages/statistic.dart';
+import 'pages/tests/test_10.dart';
+import 'pages/tests/test_11.dart';
 import 'pages/tests/test_3.dart';
 import 'pages/tests/test_4.dart';
 import 'pages/tests/test_5.dart';
 import 'pages/tests/test_6.dart';
+import 'pages/tests/test_7.dart';
+import 'pages/tests/test_8.dart';
+import 'pages/tests/test_9.dart';
 
 void main() => runApp(MaterialApp(
       theme: ThemeData(
@@ -52,12 +57,22 @@ void main() => runApp(MaterialApp(
         '/result_4': (context) => const Results_4(),
         '/result_5': (context) => const Results_5(),
         '/result_6': (context) => const Results_6(),
+        '/result_7': (context) => const Results_7(),
+        '/result_8': (context) => const Results_8(),
+        '/result_9': (context) => const Results_9(),
+        '/result_10': (context) => const Results_10(),
+        '/result_11': (context) => const Results_11(),
         '/mol': (context) => const Test(),
         '/test_2': (context) => const Termodinamica(),
         '/test_3': (context) => const Test_3(),
         '/test_4': (context) => const Test_4(),
         '/test_5': (context) => const Test_5(),
         '/test_6': (context) => const Test_6(),
+        '/test_7': (context) => const Test_7(),
+        '/test_8': (context) => const Test_8(),
+        '/test_9': (context) => const Test_9(),
+        '/test_10': (context) => const Test_10(),
+        '/test_11': (context) => const Test_11(),
         '/statistic': (context) => const Statistic(),
         '/nuclear_physics': (context) => Nuclear(),
         '/atom': (context) => Atom(),
