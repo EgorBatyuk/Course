@@ -1,5 +1,7 @@
+import 'package:course/pages/eleven/atom_physics.dart';
 import 'package:course/pages/eleven/electromagnetic_fluctuations_and_waves.dart';
 import 'package:course/pages/eleven/mechanical_vibrations_and_waves.dart';
+import 'package:course/pages/eleven/nuclear_physics.dart';
 import 'package:course/pages/eleven/optics.dart';
 import 'package:course/pages/ten/dc_electric_current.dart';
 import 'package:course/pages/ten/electricity.dart';
@@ -41,6 +43,8 @@ void main() => runApp(MaterialApp(
         '/photons': (context) => const Photons(),
         '/result': (context) => const Results(),
         '/mol': (context) => const Test(),
-        '/statistic': (context) => const Statistic()
+        '/statistic': (context) => const Statistic(),
+        '/nuclear_physics': (context) => Nuclear(),
+        '/atom': (context) => Atom(),
       },
     ));

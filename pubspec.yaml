@@ -71,6 +71,7 @@ flutter:
     - images/theory_of_relativity/
     - images/photons/
     - images/atom/
+    - images/nuclear/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
