@@ -266,7 +266,7 @@ class _FifenState extends State<Fifen> {
     return Column(
       children: [
 
-        Text('Что Такое фотон?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое фотон?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Микрочастица света\n', textAlign: TextAlign.justify,),

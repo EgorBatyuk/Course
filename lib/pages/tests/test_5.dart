@@ -87,7 +87,7 @@ class _SecondState extends State<Second> {
     return Column(
       children: [
 
-        Text('Что такое Магнитные силы?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое магнитные силы?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Силы, которые взаимодействуют между 2 и более намагниченных тел\n', textAlign: TextAlign.justify,),
@@ -326,7 +326,7 @@ class _SixthState extends State<Sixth> {
     return Column(
       children: [
 
-        Text('Что такое Однородное магнитное поле?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое однородное магнитное поле?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Поле, индукция которого во всех точках пространства одинакова\n', textAlign: TextAlign.justify,),

@@ -27,7 +27,7 @@ class _FirstState extends State<First> {
     return Column(
       children: [
 
-        Text('Что такое Электрический ток?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое электрический ток?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Направленное движение заряженных частиц'),

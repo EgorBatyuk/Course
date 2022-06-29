@@ -574,7 +574,7 @@ class _TenthState extends State<Tenth> {
         Text('К каким волнам относиться данное свойство: "Распространяется не только в различных средах, но и в вакууме"?\n', textAlign: TextAlign.justify , style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
-          title: const Text('Электромагнитная\n', textAlign: TextAlign.justify,),
+          title: const Text('Электромагнитные\n', textAlign: TextAlign.justify,),
           value: Qaz.q,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -584,7 +584,7 @@ class _TenthState extends State<Tenth> {
           },
         ),
         RadioListTile<Qaz>(
-          title: const Text('Электрическа\n', textAlign: TextAlign.justify,),
+          title: const Text('Электрические\n', textAlign: TextAlign.justify,),
           value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {

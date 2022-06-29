@@ -326,7 +326,7 @@ class _SixthState extends State<Sixth> {
     return Column(
       children: [
 
-        Text('Что такое Электролит?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое электролит?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Вещества, растворы или расплавы которых не проводят электрический ток\n', textAlign: TextAlign.justify,),
@@ -446,7 +446,7 @@ class _EighthState extends State<Eighth> {
     return Column(
       children: [
 
-        Text('Что называют Энергией ионизации атома?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что называют энергией ионизации атома?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Энергия для отрыва электрона от атома\n', textAlign: TextAlign.justify,),

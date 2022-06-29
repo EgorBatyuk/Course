@@ -387,7 +387,7 @@ class _SeventhState extends State<Seventh> {
     return Column(
       children: [
 
-        Text('Что такое "Электростатическое поле"?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое электростатическое поле?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Поле, на котором распологаются точечные заряды и элементарный заряды\n', textAlign: TextAlign.justify,),
@@ -507,7 +507,7 @@ class _NinthState extends State<Ninth> {
     return Column(
       children: [
 
-        Text('Что такое "Однородное электростатическое поле"?\n', textAlign: TextAlign.justify, style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое однородное электростатическое поле?\n', textAlign: TextAlign.justify, style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Электростатическое поле, напряжённость которого во всех точках пространства одинакова\n', textAlign: TextAlign.justify,),
@@ -531,7 +531,7 @@ class _NinthState extends State<Ninth> {
         ),
 
         RadioListTile(
-          title: const Text('Электростатическое поле, В котором присуствуют заряды только одного класса\n', textAlign: TextAlign.justify,),
+          title: const Text('Электростатическое поле, в котором присуствуют заряды только одного класса\n', textAlign: TextAlign.justify,),
           value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {
@@ -572,7 +572,7 @@ class _TenthState extends State<Tenth> {
     return Column(
       children: [
 
-        Text('Напряжение это?\n', textAlign: TextAlign.justify , style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое напряжение?\n', textAlign: TextAlign.justify , style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Физическая скалярная величина, показывающая отношение между электростатическим полем и пробным зарядом, помещенным в данное поле\n', textAlign: TextAlign.justify,),
@@ -585,7 +585,7 @@ class _TenthState extends State<Tenth> {
           },
         ),
         RadioListTile<Qaz>(
-          title: const Text('количество элементарных зарядов между двумя точечными зарядами\n', textAlign: TextAlign.justify,),
+          title: const Text('Количество элементарных зарядов между двумя точечными зарядами\n', textAlign: TextAlign.justify,),
           value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {

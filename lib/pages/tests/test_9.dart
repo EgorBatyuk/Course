@@ -326,7 +326,7 @@ class _SixthState extends State<Sixth> {
     return Column(
       children: [
 
-        Text('Волны одинаковых частот, разность фаз колебаний которых в каждой точке пространства не изменяется с течение м времени, называется?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Волны одинаковых частот, разность фаз колебаний которых в каждой точке пространства не изменяется с течение м времени, называются?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Антифазными\n', textAlign: TextAlign.justify,),

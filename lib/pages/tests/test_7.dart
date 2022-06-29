@@ -87,7 +87,7 @@ class _SecondState extends State<Second> {
     return Column(
       children: [
 
-        Text('Что такое перил колебаний?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое перилд колебаний?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Минимальный промежуток времени, при котором произойдут все колебательные действия тела\n', textAlign: TextAlign.justify,),
@@ -530,7 +530,7 @@ class _NinthState extends State<Ninth> {
         ),
 
         RadioListTile(
-          title: const Text('резкое возрастание амплитуды вынужденных колебаний\n', textAlign: TextAlign.justify,),
+          title: const Text('Резкое возрастание амплитуды вынужденных колебаний\n', textAlign: TextAlign.justify,),
           value: Qaz.a,
           groupValue: _qaz,
           onChanged: (Qaz? value) {

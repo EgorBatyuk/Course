@@ -326,7 +326,7 @@ class _SixthState extends State<Sixth> {
     return Column(
       children: [
 
-        Text('Что происходит с  энергией при переходе от одного тела к другому?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что происходит с энергией при переходе от одного тела к другому?\n', textAlign: TextAlign.justify,  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Энергия никуда не исчезает, передается от одного тела к другому\n', textAlign: TextAlign.justify,),
@@ -506,7 +506,7 @@ class _NinthState extends State<Ninth> {
     return Column(
       children: [
 
-        Text('Что делает Рабочее тело теплового двигателя?\n', textAlign: TextAlign.justify, style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что делает рабочее тело теплового двигателя?\n', textAlign: TextAlign.justify, style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Перенаправляет количество теплоты к движущимся элементам двигателя\n', textAlign: TextAlign.justify,),
@@ -571,7 +571,7 @@ class _TenthState extends State<Tenth> {
     return Column(
       children: [
 
-        Text('Что такое Термодинамическая система?\n', textAlign: TextAlign.justify , style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
+        Text('Что такое термодинамическая система?\n', textAlign: TextAlign.justify , style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w600)),
 
         RadioListTile(
           title: const Text('Система, в которой поисходят термодинамические преобразования энергии\n', textAlign: TextAlign.justify,),
