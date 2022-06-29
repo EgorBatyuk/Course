@@ -89,7 +89,7 @@ class Tests extends StatelessWidget {
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/test_9');}, child: Text('Оптика')),
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/test_10');}, child: Text('Фотоны. Действия света')),
         ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/test_11');}, child: Text('Физика атома')),
-        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/mol');}, child: Text('Ядерная физика и элементарные частицы')),
+        ElevatedButton(onPressed: () {Navigator.pushNamed(context, '/test_12');}, child: Text('Ядерная физика и элементарные частицы')),
       ],
     );
   }
